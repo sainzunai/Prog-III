@@ -8,7 +8,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class VentanaEdicionSprites extends JFrame {
-	JPanel pSprites;
+	JPanel pSprites;  
 	JPanel pPreview;
 	JPanel pArena;
 	JPanel pSecuencia;   
