@@ -11,7 +11,7 @@ public class VentanaEdicionSprites extends JFrame {
 	JPanel pSprites;
 	JPanel pPreview;
 	JPanel pArena;
-	JPanel pSecuencia;
+	JPanel pSecuencia;   
 	JPanel pAnimacion;
 	JPanel pComplementoAnimacion;
 	JPanel pBotones;
