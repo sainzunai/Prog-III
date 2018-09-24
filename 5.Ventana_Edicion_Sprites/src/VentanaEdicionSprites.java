@@ -18,7 +18,7 @@ public class VentanaEdicionSprites extends JFrame {
 	
 	JPanel pCentro;
 	JPanel pNorte;
-	JPanel pSur;
+	JPanel pSur;  
 	
 	public VentanaEdicionSprites() {
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
