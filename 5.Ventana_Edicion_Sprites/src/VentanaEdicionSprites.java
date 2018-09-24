@@ -21,7 +21,7 @@ public class VentanaEdicionSprites extends JFrame {
 	JPanel pSur;      
 	
 	public VentanaEdicionSprites() {
-		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);  
 		setTitle("Ventana Edicion Sprites");
 		setSize(1280, 720);
 		
