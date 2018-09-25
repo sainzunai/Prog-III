@@ -1,31 +1,51 @@
 package ventana.ventanaCompleta;
 
-/** Clase controladora de la ventana de sprites
+import java.io.File;
+import java.io.FileReader;
+import java.io.FilenameFilter;
+import java.io.IOException;
+
+import javax.swing.JFileChooser;
+
+/**
+ * Clase controladora de la ventana de sprites
+ * 
  * @author andoni.eguiluz @ ingenieria.deusto.es
  */
 public class ControladorVentanaSprites {
-	
-	private VentanaEdicionSprites miVentana;  // Ventana controlada
-	
-	/** Constructor de controlador de ventana de edición de sprites
-	 * @param vent	Ventana a controlar
+
+	private VentanaEdicionSprites miVentana; // Ventana controlada
+
+	/**
+	 * Constructor de controlador de ventana de edición de sprites
+	 * 
+	 * @param vent
+	 *            Ventana a controlar
 	 */
-	public ControladorVentanaSprites( VentanaEdicionSprites vent ) {
+	public ControladorVentanaSprites(VentanaEdicionSprites vent) {
 		miVentana = vent;
 	}
-	
+
 	/** Click sobre el botón buscar */
 	public void clickBBuscar() {
-		// TODO Sacar un diálogo de búsqueda de fichero con JFileChooser
-		// y cargar la lista de ficheros lSprites a través de su modelo
-		// Por ejemplo:
+
+		// Creamos el objeto JFileChooser
+		JFileChooser fc = new JFileChooser();
+		fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY); // para que el usuario solo pueda seleccionar una
+																// crapeta
+
+		// Abrimos la ventana, guardamos la opcion seleccionada por el usuario
+		int seleccion = fc.showOpenDialog(miVentana); // el cuadro de dialogo depende de la ventana
+
+		// Seleccionamos el fichero
+		File fichero = fc.getSelectedFile();
 		miVentana.mSprites.clear();
-		miVentana.mSprites.addElement( new java.io.File( "c:/datos/ejemplo/ejemplo.png" ) );
-		miVentana.mSprites.addElement( new java.io.File( "c:/datos/ejemplo/ejemplo2.png" ) );
-		miVentana.lCarpetaSel.setText( "c:/datos/ejemplo/" );
+		for (File f : fichero.listFiles()) {
+			if ( f.getName().toLowerCase().endsWith("png")) {
+				miVentana.mSprites.addElement(f);
+			}
+			
+		}
+
 	}
-	
-	// TODO Resto de controladores
-	
-	
 }
