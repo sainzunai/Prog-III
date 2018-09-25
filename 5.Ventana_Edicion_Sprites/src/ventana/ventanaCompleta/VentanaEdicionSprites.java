@@ -351,7 +351,19 @@ public class VentanaEdicionSprites extends JFrame {  // Vamos a definir una clas
 			}
 		});
 		
+		lSprites.addMouseListener(new MouseAdapter() {
+			
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				if (e.getClickCount() >= 2) {
+					
+				}
+			}
+		});
+		
 	}
+	
+	
 	
 	/** Devuelve el controlador de la ventana
 	 * @return

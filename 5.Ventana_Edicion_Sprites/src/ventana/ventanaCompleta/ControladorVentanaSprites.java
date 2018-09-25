@@ -45,12 +45,16 @@ public class ControladorVentanaSprites {
 				if (f.getName().toLowerCase().endsWith("png")) {
 					miVentana.mSprites.addElement(f);
 				}
-
 			}
 		}
 	}
 
 	public void scrollAngulo() {
-
+		float valor = miVentana.slAngulo.getValue();
+		miVentana.tfAngulo.setText(String.valueOf(valor));
+	}
+	
+	public void dobleClick() {
+		
 	}
 }
