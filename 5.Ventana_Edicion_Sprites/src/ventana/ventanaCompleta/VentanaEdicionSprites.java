@@ -6,6 +6,9 @@ package ventana.ventanaCompleta;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
+
 // Import para ficheros
 import java.io.*;
 //Import para Java Collections y otras utilidades
@@ -340,7 +343,13 @@ public class VentanaEdicionSprites extends JFrame {  // Vamos a definir una clas
 				miControlador.clickBBuscar();
 			}
 		});
-		// TODO Resto de gestores
+		slAngulo.addChangeListener(new ChangeListener() {
+			
+			@Override
+			public void stateChanged(ChangeEvent e) {
+				miControlador.scrollAngulo();
+			}
+		});
 		
 	}
 	

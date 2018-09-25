@@ -37,15 +37,20 @@ public class ControladorVentanaSprites {
 		// Abrimos la ventana, guardamos la opcion seleccionada por el usuario
 		int seleccion = fc.showOpenDialog(miVentana); // el cuadro de dialogo depende de la ventana
 
-		// Seleccionamos el fichero
-		File fichero = fc.getSelectedFile();
-		miVentana.mSprites.clear();
-		for (File f : fichero.listFiles()) {
-			if ( f.getName().toLowerCase().endsWith("png")) {
-				miVentana.mSprites.addElement(f);
+		if (seleccion == JFileChooser.APPROVE_OPTION) {
+			// Seleccionamos el fichero
+			File fichero = fc.getSelectedFile();
+			miVentana.mSprites.clear();
+			for (File f : fichero.listFiles()) {
+				if (f.getName().toLowerCase().endsWith("png")) {
+					miVentana.mSprites.addElement(f);
+				}
+
 			}
-			
 		}
+	}
+
+	public void scrollAngulo() {
 
 	}
 }
