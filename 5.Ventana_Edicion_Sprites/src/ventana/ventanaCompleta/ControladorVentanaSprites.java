@@ -54,7 +54,11 @@ public class ControladorVentanaSprites {
 		miVentana.tfAngulo.setText(String.valueOf(valor));
 	}
 	
-	public void dobleClick() {
-		
+	public void dobleClickSprites() {
+		miVentana.mSecuencia.addElement(miVentana.lSprites.getSelectedValue());
+	}
+	
+	public void dobleClickSecuencia() {
+		miVentana.lFoto.setImagen(miVentana.lSecuencia.getSelectedValue().toString());
 	}
 }
