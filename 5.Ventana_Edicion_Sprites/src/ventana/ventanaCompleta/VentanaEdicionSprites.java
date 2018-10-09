@@ -177,7 +177,7 @@ public class VentanaEdicionSprites extends JFrame { // Vamos a definir una clase
 		setTitle("Edición de sprites - Prog. III");
 
 		// Creación de contenedores con sus layouts
-		lFoto = new JLabelGraficoAjustado("",pPreview.getWidth() , pPreview.getHeight());
+//		lFoto = new JLabelGraficoAjustado("",pPreview.getWidth() , pPreview.getHeight());
 		
 		pPreview = new JPanel(null);
 		pArena = new JPanel(null);
@@ -275,7 +275,7 @@ public class VentanaEdicionSprites extends JFrame { // Vamos a definir una clase
 		pC.add(pCSup, BorderLayout.CENTER);
 		pCSup.setLeftComponent(pCSup1);
 		pCSup1.add(pPreview, BorderLayout.CENTER);
-			pPreview.add(lFoto);
+//			pPreview.add(lFoto);
 		pCSup.setRightComponent(pCSup2);
 		pCSup2.add(pArena, BorderLayout.CENTER);
 		pC.add(pCInf, BorderLayout.SOUTH);

@@ -19,5 +19,4 @@ public class MainEdicionSprites {
 		VentanaEdicionSprites v = new VentanaEdicionSprites();
 		v.setVisible( true );
 	}
-
 }
