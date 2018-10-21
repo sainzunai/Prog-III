@@ -1,0 +1,21 @@
+ try
+         {
+         //Código que puede provocar errores
+         }
+         catch(Tipo1 var1) ex: ArrayIndexOutOfBoundsException excepcion
+         {
+	         //Gestión del error var1, de tipo Tipo1
+         }
+         [  
+
+         catch(TipoN varN)
+         {
+	         //Gestión del error varN, de tipo TipoN
+         } ]
+         [
+         
+         OPCIONAL:
+         finally
+         {
+	         //Código de finally
+         }

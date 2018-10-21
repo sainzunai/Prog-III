@@ -48,7 +48,7 @@ public class VentanaBoton extends JFrame {
 		pFondo.setBorder(BorderFactory.createLineBorder(Color.BLUE));
 		pTitulo.setBorder(BorderFactory.createLineBorder(Color.magenta));
 
-		pTitulo.add(new JLabel("HOOOOOOOOOOOOOOOOOOOOOOLA"));
+//		pTitulo.add(new JLabel("HOOOOOOOOOOOOOOOOOOOOOOLA"));
 		pTitulo.setBorder(javax.swing.BorderFactory.createTitledBorder("Javi es feo"));	//setear titulo
 		
 	
