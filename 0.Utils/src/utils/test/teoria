@@ -1,0 +1,14 @@
+"En qué casos hacer Test (JUnit)  para mis propios programas? Cuáles son los comandos básicos del test (assert...)"
+
+Los comandos básicos de JUnit están en las diapos del capítulo 1 (página 38). 
+Un listado exhaustivo lo tenéis en la clase Assert de JUnit:
+http://junit.sourceforge.net/javadoc/org/junit/Assert.html
+
+Pero por resumir: con assertEquals, assertTrue, assertNull, y fail, podemos hacer ya de todo 
+(acordaos del parámetro de tolerancia en el equals de los dobles y también que hay un assertSame que se 
+usa en algunas ocasiones y es una comparación por ==).
+
+La recomendación de cuándo hacer JUnit: SIEMPRE. Esto es la teoría utópica. En la realidad, sobre todo intentad 
+hacer JUnit cuando hagáis clases y métodos que operan con lógica de datos SIN interacción: cálculos, cambio de valores 
+de atributos, estructuras de datos, lógicas sobre datos...   cuando nos vamos a clases interactivas es algo más difícil 
+hacer tests, y trabajoso hacerlos completos (como hemos visto en el ejemplo de test de la ventana de sprites en clase).
