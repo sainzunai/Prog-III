@@ -47,6 +47,9 @@ public String toString() {
 		b1.setL1(10000000);
 		b1.setStr1("hooooolaaaa");
 		System.out.println(b1);
+		System.out.println("\\");
+		System.out.println( "\\." + "+" + "\\\\." );
+		System.out.println( "*" + "+" + ".*" );
 	}
 
 }
