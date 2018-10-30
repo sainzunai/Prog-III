@@ -11,10 +11,11 @@ import javax.swing.table.DefaultTableModel;
 
 public class MiBD {
 
-	private static Logger logger = Logger.getLogger( "MiniPracticaBD" );
+	private static Logger logger = Logger.getLogger( "LoggerBaseDatos1" );	//logger para loguear los movimientos de la bd
 	private static Connection con;
 	private static Statement s;
 	private static ResultSet rs;
+	 
 	public static void main(String[] args) {
 		String com = "";
 		try {
