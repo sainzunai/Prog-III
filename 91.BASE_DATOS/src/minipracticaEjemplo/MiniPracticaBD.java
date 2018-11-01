@@ -188,3 +188,4 @@ public class MiniPracticaBD {
 //  Por ejemplo si se mete en el nick esto y se da a borrar:
 //   a'; drop table usuario; --
 //
+
