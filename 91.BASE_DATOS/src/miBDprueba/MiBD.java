@@ -11,7 +11,6 @@ import javax.swing.table.DefaultTableModel;
 
 public class MiBD {
 
-	private static Logger logger = Logger.getLogger( "LoggerBaseDatos1" );	//logger para loguear los movimientos de la bd
 	private static Connection con;
 	private static Statement s;
 	private static ResultSet rs;
@@ -22,18 +21,15 @@ public class MiBD {
 			Class.forName( "org.sqlite.JDBC" );
 			con = DriverManager.getConnection( "jdbc:sqlite:test.db" );
 			s = con.createStatement();
-			try {
-				com = "create table Usuario( nick STRING, pass STRING )";
-				logger.log( Level.INFO, "BD: " + com );
-				s.executeUpdate( com );
+			try {	//creacion de la tabla con sus dos columnas
+				com = "create table MiTabla( a STRING, apellido STRING )";
+				s.executeUpdate( com );		//ejecuta el comando
 			} catch (SQLException e) {} // Se lanza si la tabla ya existe - no hay problema
-			// Ver si existe admin
-			com = "select * from Usuario where nick = 'admin'";
-			logger.log( Level.INFO, "BD: " + com );
+			// Ver si existe Unai
+			com = "select * from MiTabla where a = 'Unai'";
 			rs = s.executeQuery( com );
 			if (!rs.next()) { // Añadirlo si no existe
-				com = "insert into Usuario ( nick, pass ) values ('admin', 'admin')";
-				logger.log( Level.INFO, "BD: " + com );
+				com = "insert into MiTabla ( nombre, apellido ) values ('Unai', 'Banana')";
 				s.executeUpdate( com );
 			}
 			editarUsuarios();
@@ -49,7 +45,7 @@ public class MiBD {
 	}
 	
 	private static JTextField tfUsuario = new JTextField( "", 10 );
-	private static JTextField tfPassword = new JTextField( "", 10 );
+	private static JTextField tfApellido = new JTextField( "", 10 );
 	private static DefaultTableModel mUsuarios; // Modelo de datos para la JTable
 	private static JTable tUsuarios; // JTable de usuarios
 	private static JFrame ventana;
@@ -70,7 +66,7 @@ public class MiBD {
 		p.add( new JLabel( "Nick: ") ); p.add( tfUsuario );
 		pSuperior.add( p, BorderLayout.NORTH );
 		p = new JPanel();
-		p.add( new JLabel( "Password: ") ); p.add( tfPassword );
+		p.add( new JLabel( "Apellido: ") ); p.add( tfApellido );
 		pSuperior.add( p, BorderLayout.CENTER );
 		p = new JPanel();
 		JButton bAnyadir = new JButton( "Añadir usuario" );
@@ -85,7 +81,7 @@ public class MiBD {
 		bAnyadir.addActionListener( new ActionListener() { // Acción de añadir usuario
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				if (!tfUsuario.getText().isEmpty() && !tfPassword.getText().isEmpty()) {
+				if (!tfUsuario.getText().isEmpty() && !tfApellido.getText().isEmpty()) {
 					String com = "";
 					try {
 						// Ver si existe usuario
@@ -94,13 +90,11 @@ public class MiBD {
 						// ...si no, cuidado con lo que venga en el campo de entrada.
 						// "select * from Usuario where nick = 'admin'";
 						com = "select * from Usuario where nick = '" + tfUsuario.getText() + "'";
-						logger.log( Level.INFO, "BD: " + com );
 						rs = s.executeQuery( com );
 						if (!rs.next()) {
 							// "insert into Usuario ( nick, pass ) values ('admin', 'admin')";
 							com = "insert into Usuario ( nick, pass ) values ('"+ 
-									tfUsuario.getText() +"', '" + tfPassword.getText() + "')";
-							logger.log( Level.INFO, "BD: " + com );
+									tfUsuario.getText() +"', '" + tfApellido.getText() + "')";
 							int val = s.executeUpdate( com );
 							if (val!=1) {
 								JOptionPane.showMessageDialog( ventana, "Error en inserción" );
@@ -121,12 +115,11 @@ public class MiBD {
 		bBorrar.addActionListener( new ActionListener() { // Acción de borrar usuario
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				if (!tfUsuario.getText().isEmpty() && !tfPassword.getText().isEmpty()) {
+				if (!tfUsuario.getText().isEmpty() && !tfApellido.getText().isEmpty()) {
 					String com = "";
 					try {
 						// Borrar usuario
 						com = "delete from Usuario where nick = '"+ secu(tfUsuario.getText()) +"'";
-						logger.log( Level.INFO, "BD: " + com );
 						s.executeUpdate( com );
 					} catch (SQLException e2) {
 						System.out.println( "Último comando: " + com );
@@ -159,7 +152,6 @@ public class MiBD {
 		try {
 			while (mUsuarios.getRowCount()>0) mUsuarios.removeRow(0); // Vacía el modelo para volverlo a cargar de la bd
 			com = "select * from Usuario";
-			logger.log( Level.INFO, "BD: " + com );
 			rs = s.executeQuery( com );
 			while (rs.next()) {
 				String nick = rs.getString( "nick" );
