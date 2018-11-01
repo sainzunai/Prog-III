@@ -4,3 +4,15 @@ INsert
 delete
 date
 test
+
+PARA CREAR UNA TABLA:
+create table [NOMBRE TABLA]( [NOMBRE COL/VARIABLE] [TIPO DE VARIABLE], ... )"
+EJEMPLO:
+"create table MiTabla( nombe STRING, apellido STRING )"
+
+
+BUSCAR EN TABLA
+select * from [NOMBRE TABLA] where [NOMBRE COL] = 'Unai'
+
+ANYADIR FILAS
+insert into [NOMBRE TABLA] ( [NOMBRE COL1], [NOMBRE COL2] ) values ('[VALOR1]', '[VALOR2]')
