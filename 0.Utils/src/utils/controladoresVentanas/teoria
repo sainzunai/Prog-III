@@ -1,0 +1,21 @@
+De este modo podemos controlar una ventana desde otra clase
+
+Tenemos una ventana principal (1), y luego otra secundaria (2) desde la que podemos codificar los metodos de la ventana (1).
+
+-En el constructor del (1) creamos una variable del controlador al que le mandamos this.
+-En el controlador (2) tenemos una variable del (1). En el constructor del (2) asignamos la variable creada antes con la que mandamos
+al crear el controlador.
+
+EJEMPLO:
+
+///// POR UN LADO (1):
+	VentanaPrincipal(){
+	miControlador controlador = new Controlador(this);
+	}
+	
+	
+///// POR OTRO LADO (2):			En esta ventana codificamos los metodos, que los llamaremos desde la (1)
+	private ventanaPrincipal miVentana;
+	MiControlador(ventanaPrinc){
+	this.miVentana = ventanaPrinc
+	}
