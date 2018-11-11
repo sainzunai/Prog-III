@@ -9,7 +9,7 @@ import java.util.logging.FileHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class BD {
+public class BD { 
 
 	private static Exception lastError = null;  // Informacion de ultimo error SQL ocurrido
 	// TODO CAMBIAR CONSTANTES
