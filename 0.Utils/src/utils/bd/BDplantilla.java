@@ -1,4 +1,4 @@
-package utils.bd.plantilla;
+package utils.bd;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

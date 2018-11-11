@@ -1,8 +1,8 @@
-package utils.bd.plantilla;
+package utils.bd;
 
-public class BD2 {
+public class conversorStringNormalizadoBD {
 
-	public BD2() {
+	public conversorStringNormalizadoBD() {
 	}
 	
 	private static String secu( String string ) {
