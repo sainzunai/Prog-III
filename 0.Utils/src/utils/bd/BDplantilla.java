@@ -12,13 +12,15 @@ import java.util.logging.Logger;
 public class BDplantilla {
 
 	private static Exception lastError = null;  // Informacion de ultimo error SQL ocurrido
+	
 	// TODO CAMBIAR CONSTANTES
+	// TODO parametros de la tabla
 	private static final String NOMBRETABLA = "Usuario";
-	private static final String COLUMNAS_TABLA = " (nombre string, contraseña string)";
+	private static final String COLUMNAS_TABLA = " (nombre string, contrasenya string)";
 	
 	/** Inicializa una BD SQLITE y devuelve una conexion con ella
 	 * @param nombreBD	Nombre de fichero de la base de datos
-	 * @return	Conexiï¿½n con la base de datos indicada. Si hay algï¿½n error, se devuelve null
+	 * @return	Conexion con la base de datos indicada. Si hay algun error, se devuelve null
 	 */
 	
 	public static Connection initBD( String nombreBD ) {
@@ -54,7 +56,7 @@ public class BDplantilla {
 	}
 	
 	/** Crea las tablas de la base de datos. Si ya existen, las deja tal cual
-	 * @param con	Conexiï¿½n ya creada y abierta a la base de datos
+	 * @param con	Conexion ya creada y abierta a la base de datos
 	 * @return	sentencia de trabajo si se crea correctamente, null si hay cualquier error
 	 */
 	
@@ -76,8 +78,8 @@ public class BDplantilla {
 	}
 	
 	/** Reinicia en blanco las tablas de la base de datos. 
-	 * UTILIZAR ESTE Mï¿½TODO CON PRECAUCIï¿½N. Borra todos los datos que hubiera ya en las tablas
-	 * @param con	Conexiï¿½n ya creada y abierta a la base de datos
+	 * UTILIZAR ESTE METODO CON PRECAUCION. Borra todos los datos que hubiera ya en las tablas
+	 * @param con	Conexion ya creada y abierta a la base de datos
 	 * @return	sentencia de trabajo si se borra correctamente, null si hay cualquier error
 	 */
 	public static Statement reiniciarBD( Connection con ) {
@@ -96,7 +98,7 @@ public class BDplantilla {
 	}
 	
 	/** Cierra la base de datos abierta
-	 * @param con	Conexiï¿½n abierta de la BD
+	 * @param con	Conexion abierta de la BD
 	 * @param st	Sentencia abierta de la BD
 	 */
 	
@@ -112,7 +114,7 @@ public class BDplantilla {
 		}
 	}
 	
-	/** Devuelve la informaciï¿½n de excepciï¿½n del ï¿½ltimo error producido por cualquiera 
+	/** Devuelve la informacion de excepcion del ultimo error producido por cualquiera 
 	 * de los mï¿½todos de gestiï¿½n de base de datos
 	 */
 	public static Exception getLastError() {
@@ -122,11 +124,11 @@ public class BDplantilla {
 	// TODO CAMBIAR SELECT, UPDATE, INSERT Y DELETE
 	
 	
-	/** Aï¿½ade una analitica a la tabla abierta de BD, usando la sentencia INSERT de SQL
+	/** Anyade una analitica a la tabla abierta de BD, usando la sentencia INSERT de SQL
 	 * @param st	Sentencia ya abierta de Base de Datos (con la estructura de tabla correspondiente a la analitica)
-	 * @param codigo	Cï¿½digo a aï¿½adir a la BD (en nueva fila)
-	 * @param contador	contador a aï¿½adir a esa nueva fila de la BD
-	 * @return	true si la inserciï¿½n es correcta, false en caso contrario
+	 * @param codigo	Codigo a anyadir a la BD (en nueva fila)
+	 * @param contador	contador a anyadir a esa nueva fila de la BD
+	 * @return	true si la insercion es correcta, false en caso contrario
 	 */
 	public static boolean eleccionesInsert( Statement st, String nombre, String  contraseña ) {
 		String sentSQL = "";
@@ -172,11 +174,11 @@ public class BDplantilla {
 		}
 	}
 
-	/** Modifica una analï¿½tica en la tabla abierta de BD, usando la sentencia UPDATE de SQL
-	 * @param st	Sentencia ya abierta de Base de Datos (con la estructura de tabla correspondiente a la analï¿½tica)
-	 * @param codigo	Cï¿½digo a modificar en la base de datos
+	/** Modifica una analitica en la tabla abierta de BD, usando la sentencia UPDATE de SQL
+	 * @param st	Sentencia ya abierta de Base de Datos (con la estructura de tabla correspondiente a la analitica)
+	 * @param codigo	Codigo a modificar en la base de datos
 	 * @param contador	Contador a modificar de ese cï¿½digo
-	 * @return	true si la inserciï¿½n es correcta, false en caso contrario
+	 * @return	true si la insercion es correcta, false en caso contrario
 	 */
 	public static boolean analiticaUpdate( Statement st, String codigo, int contador ) {
 		String sentSQL = "";
@@ -197,9 +199,9 @@ public class BDplantilla {
 		}
 	}
 
-	/** Borrar una analï¿½tica de la tabla abierta de BD, usando la sentencia DELETE de SQL
+	/** Borrar una analitica de la tabla abierta de BD, usando la sentencia DELETE de SQL
 	 * @param st	Sentencia ya abierta de Base de Datos (con la estructura de tabla correspondiente a la analï¿½tica)
-	 * @param codigo	Cï¿½digo de analï¿½tica a borrar de la base de datos
+	 * @param codigo	Codigo de analitica a borrar de la base de datos
 	 * @return	true si el borrado es correcto, false en caso contrario
 	 */
 	public static boolean analiticaDelete( Statement st, String codigo ) {
@@ -219,7 +221,7 @@ public class BDplantilla {
 
 	
 	/////////////////////////////////////////////////////////////////////
-	//                      Mï¿½todos privados                           //
+	//                      Metodos privados                           //
 	/////////////////////////////////////////////////////////////////////
 
 	// Devuelve el string "securizado" para volcarlo en SQL
