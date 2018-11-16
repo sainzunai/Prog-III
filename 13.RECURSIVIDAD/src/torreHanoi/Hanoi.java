@@ -7,7 +7,7 @@ public class Hanoi {
 	}
 
 	private static void hanoi(int n, char origen, char destino, char auxiliar) {
-		if (n == 1) {
+		if (n == 1) {//caso base
 			System.out.println("Mover 1 de " + origen + " a " + destino);
 		}else {
 			hanoi(n-1, origen, auxiliar, destino);
