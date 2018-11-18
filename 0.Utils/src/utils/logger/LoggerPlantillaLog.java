@@ -32,7 +32,7 @@ public class LoggerPlantillaLog {
 	}
 
 	public static void main(String[] args) {
-		String fichero = ".xml";	//nombre fichero
+		String fichero = ".xml";	//nombre fichero, en este fichero se guardan los logs importantes
 		try {
 			FileHandler h = new FileHandler(fichero);
 			loggerConsola.addHandler(h);	//guarda la info en el fichero

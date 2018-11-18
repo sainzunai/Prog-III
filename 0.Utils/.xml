@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-11-18T11:11:19</date>
+  <millis>1542535879323</millis>
+  <sequence>0</sequence>
+  <logger>MiPrimerLogger</logger>
+  <level>INFO</level>
+  <class>utils.logger.LoggerPlantillaLog</class>
+  <method>hacerAlgo</method>
+  <thread>1</thread>
+  <message>Se ha imprimido: que se ha hecho</message>
+</record>
+</log>
