@@ -10,7 +10,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class BDplantilla { 
-
+ 
 	private static Exception lastError = null;  // Informacion de ultimo error SQL ocurrido
 	
 	// TODO CAMBIAR CONSTANTES
