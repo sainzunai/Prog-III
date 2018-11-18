@@ -2,7 +2,7 @@ package utils.bd;
 
 public class conversorStringNormalizadoBD {
 
-	public conversorStringNormalizadoBD() {
+	public conversorStringNormalizadoBD() { 
 	}
 	
 	private static String secu( String string ) {
