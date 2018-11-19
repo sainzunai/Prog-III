@@ -8,7 +8,7 @@ import java.util.Properties;
 public class PrpoertiesPlantilla {
 	Properties misProps;
 
-	public PrpoertiesPlantilla() {
+	public PrpoertiesPlantilla() { 
 		misProps = new Properties();
 	}
 

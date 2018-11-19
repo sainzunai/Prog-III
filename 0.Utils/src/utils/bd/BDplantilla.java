@@ -115,7 +115,7 @@ public class BDplantilla {
 	}
 	
 	/** Devuelve la informacion de excepcion del ultimo error producido por cualquiera 
-	 * de los m�todos de gesti�n de base de datos
+	 * de los metodos de gestion de base de datos
 	 */
 	public static Exception getLastError() {
 		return lastError;
