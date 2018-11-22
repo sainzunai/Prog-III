@@ -8,7 +8,7 @@ public class Factorial {
 		hacerFactorial(5, 0, 1);
 
 	}
-
+ 
 	/**
 	 * FACTORIAL ORDENADO
 	 * 

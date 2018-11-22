@@ -3,9 +3,11 @@ package utils.ejemplos.pattern;
 import java.util.regex.Pattern;
 
 public class EjemploPattern {
+	
 	private static String[] testNombres = {
 		"prueba.txt", "prueba2.jpg", "otro.dat", "pedro.doc", "andoni.txt", "dir"
 	};
+	
 	public static void main(String[] args) {
 		// Expresión regular de p*.* -->   p .* \. .*
 		// Como el carácter \ en un string en Java es especial, hay que poner \\
