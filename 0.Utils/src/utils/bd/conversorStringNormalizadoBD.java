@@ -17,7 +17,7 @@ public class conversorStringNormalizadoBD {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(secu("hoola"));
+		System.out.println(secu("hoola")); 
 		System.out.println(secu("hoola ´´"));
 
 

@@ -18,6 +18,6 @@ public class MiBD {
 
 	public static void main(String[] args) {
 		System.out.println(secu("hoola"));
-	}
+	} 
 }
 
