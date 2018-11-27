@@ -1,0 +1,1855 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-11-22T18:15:52</date>
+  <millis>1542906952130</millis>
+  <sequence>0</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos BD gestion usuarios</message>
+</record>
+<record>
+  <date>2018-11-22T18:15:52</date>
+  <millis>1542906952234</millis>
+  <sequence>1</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-11-22T18:18:50</date>
+  <millis>1542907130862</millis>
+  <sequence>0</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos BD gestion usuarios</message>
+</record>
+<record>
+  <date>2018-11-22T18:18:50</date>
+  <millis>1542907130871</millis>
+  <sequence>1</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2018-11-22T18:18:50</date>
+  <millis>1542907130873</millis>
+  <sequence>2</sequence>
+  <logger>Logger BD</logger>
+  <level>SEVERE</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Error en BD	insert into Usuario values('Unai', pass)</message>
+  <exception>
+    <message>org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: pass)</message>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>newSQLException</method>
+      <line>909</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>newSQLException</method>
+      <line>921</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>throwex</method>
+      <line>886</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.NativeDB</class>
+      <method>_exec_utf8</method>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.NativeDB</class>
+      <method>_exec</method>
+      <line>87</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.jdbc3.JDBC3Statement</class>
+      <method>executeUpdate</method>
+      <line>116</line>
+    </frame>
+    <frame>
+      <class>miBDprueba.MiBD</class>
+      <method>UsuariosInsert</method>
+      <line>125</line>
+    </frame>
+    <frame>
+      <class>miBDprueba.MiBD</class>
+      <method>main</method>
+      <line>162</line>
+    </frame>
+  </exception>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-11-22T18:22:45</date>
+  <millis>1542907365237</millis>
+  <sequence>0</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos BD gestion usuarios</message>
+</record>
+<record>
+  <date>2018-11-22T18:22:45</date>
+  <millis>1542907365242</millis>
+  <sequence>1</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2018-11-22T18:22:45</date>
+  <millis>1542907365332</millis>
+  <sequence>2</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('Unai', 'pass')</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-11-22T18:26:52</date>
+  <millis>1542907612586</millis>
+  <sequence>0</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos BD gestion usuarios</message>
+</record>
+<record>
+  <date>2018-11-22T18:26:52</date>
+  <millis>1542907612591</millis>
+  <sequence>1</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2018-11-22T18:26:52</date>
+  <millis>1542907612592</millis>
+  <sequence>2</sequence>
+  <logger>Logger BD</logger>
+  <level>SEVERE</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Error en BD	insert into Usuario values('Uni', pass)</message>
+  <exception>
+    <message>org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: pass)</message>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>newSQLException</method>
+      <line>909</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>newSQLException</method>
+      <line>921</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>throwex</method>
+      <line>886</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.NativeDB</class>
+      <method>_exec_utf8</method>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.NativeDB</class>
+      <method>_exec</method>
+      <line>87</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.jdbc3.JDBC3Statement</class>
+      <method>executeUpdate</method>
+      <line>116</line>
+    </frame>
+    <frame>
+      <class>miBDprueba.MiBD</class>
+      <method>insert</method>
+      <line>125</line>
+    </frame>
+    <frame>
+      <class>miBDprueba.MiBD</class>
+      <method>main</method>
+      <line>163</line>
+    </frame>
+  </exception>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-11-22T18:27:28</date>
+  <millis>1542907648747</millis>
+  <sequence>0</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos BD gestion usuarios</message>
+</record>
+<record>
+  <date>2018-11-22T18:27:28</date>
+  <millis>1542907648751</millis>
+  <sequence>1</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2018-11-22T18:27:28</date>
+  <millis>1542907648883</millis>
+  <sequence>2</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('Uni', 'pass')</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-11-22T18:27:43</date>
+  <millis>1542907663423</millis>
+  <sequence>0</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos BD gestion usuarios</message>
+</record>
+<record>
+  <date>2018-11-22T18:27:43</date>
+  <millis>1542907663428</millis>
+  <sequence>1</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2018-11-22T18:27:43</date>
+  <millis>1542907663613</millis>
+  <sequence>2</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('Uni', 'pass')</message>
+</record>
+<record>
+  <date>2018-11-22T18:27:43</date>
+  <millis>1542907663753</millis>
+  <sequence>3</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('Uni', 'pass')</message>
+</record>
+<record>
+  <date>2018-11-22T18:27:43</date>
+  <millis>1542907663858</millis>
+  <sequence>4</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('Uni', 'pass')</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-11-22T18:30:57</date>
+  <millis>1542907857150</millis>
+  <sequence>0</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos BD gestion usuarios</message>
+</record>
+<record>
+  <date>2018-11-22T18:30:57</date>
+  <millis>1542907857156</millis>
+  <sequence>1</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2018-11-22T18:30:57</date>
+  <millis>1542907857598</millis>
+  <sequence>2</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('Uni', 'pass')</message>
+</record>
+<record>
+  <date>2018-11-22T18:30:57</date>
+  <millis>1542907857712</millis>
+  <sequence>3</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('Uni', 'pass')</message>
+</record>
+<record>
+  <date>2018-11-22T18:30:57</date>
+  <millis>1542907857818</millis>
+  <sequence>4</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('Uni', 'pass')</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-11-22T18:37:57</date>
+  <millis>1542908277161</millis>
+  <sequence>0</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos BD gestion usuarios</message>
+</record>
+<record>
+  <date>2018-11-22T18:37:57</date>
+  <millis>1542908277166</millis>
+  <sequence>1</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2018-11-22T18:37:57</date>
+  <millis>1542908277362</millis>
+  <sequence>2</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('Uni', 'pass')</message>
+</record>
+<record>
+  <date>2018-11-22T18:37:57</date>
+  <millis>1542908277455</millis>
+  <sequence>3</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('Banano', 'pass')</message>
+</record>
+<record>
+  <date>2018-11-22T18:37:57</date>
+  <millis>1542908277570</millis>
+  <sequence>4</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('platano', 'pass')</message>
+</record>
+<record>
+  <date>2018-11-22T18:37:57</date>
+  <millis>1542908277581</millis>
+  <sequence>5</sequence>
+  <logger>Logger BD</logger>
+  <level>SEVERE</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Error en BD	select * from Usuario where nombre='Uni'</message>
+  <exception>
+    <message>java.sql.SQLException: no such column: 'contador'</message>
+    <frame>
+      <class>org.sqlite.jdbc3.JDBC3ResultSet</class>
+      <method>findColumn</method>
+      <line>48</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.jdbc3.JDBC3ResultSet</class>
+      <method>getInt</method>
+      <line>401</line>
+    </frame>
+    <frame>
+      <class>miBDprueba.MiBD</class>
+      <method>select</method>
+      <line>112</line>
+    </frame>
+    <frame>
+      <class>miBDprueba.MiBD</class>
+      <method>main</method>
+      <line>193</line>
+    </frame>
+  </exception>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-11-22T18:38:43</date>
+  <millis>1542908323810</millis>
+  <sequence>0</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos BD gestion usuarios</message>
+</record>
+<record>
+  <date>2018-11-22T18:38:43</date>
+  <millis>1542908323815</millis>
+  <sequence>1</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2018-11-22T18:38:44</date>
+  <millis>1542908324249</millis>
+  <sequence>2</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('Uni', 'pass')</message>
+</record>
+<record>
+  <date>2018-11-22T18:38:44</date>
+  <millis>1542908324348</millis>
+  <sequence>3</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('Banano', 'pass')</message>
+</record>
+<record>
+  <date>2018-11-22T18:38:44</date>
+  <millis>1542908324492</millis>
+  <sequence>4</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('platano', 'pass')</message>
+</record>
+<record>
+  <date>2018-11-22T18:38:44</date>
+  <millis>1542908324494</millis>
+  <sequence>5</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='Uni'</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-11-22T18:40:05</date>
+  <millis>1542908405409</millis>
+  <sequence>0</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos BD gestion usuarios</message>
+</record>
+<record>
+  <date>2018-11-22T18:40:05</date>
+  <millis>1542908405413</millis>
+  <sequence>1</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2018-11-22T18:40:05</date>
+  <millis>1542908405657</millis>
+  <sequence>2</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('Uni', 'pass')</message>
+</record>
+<record>
+  <date>2018-11-22T18:40:05</date>
+  <millis>1542908405768</millis>
+  <sequence>3</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('Banano', 'pass')</message>
+</record>
+<record>
+  <date>2018-11-22T18:40:05</date>
+  <millis>1542908405863</millis>
+  <sequence>4</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('platano', 'pass')</message>
+</record>
+<record>
+  <date>2018-11-22T18:40:05</date>
+  <millis>1542908405868</millis>
+  <sequence>5</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='Uni'</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-11-22T18:40:49</date>
+  <millis>1542908449424</millis>
+  <sequence>0</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos BD gestion usuarios</message>
+</record>
+<record>
+  <date>2018-11-22T18:40:49</date>
+  <millis>1542908449428</millis>
+  <sequence>1</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2018-11-22T18:40:49</date>
+  <millis>1542908449862</millis>
+  <sequence>2</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('Uni', 'pass')</message>
+</record>
+<record>
+  <date>2018-11-22T18:40:49</date>
+  <millis>1542908449958</millis>
+  <sequence>3</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('Banano', 'pass')</message>
+</record>
+<record>
+  <date>2018-11-22T18:40:50</date>
+  <millis>1542908450057</millis>
+  <sequence>4</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('platano', 'pass')</message>
+</record>
+<record>
+  <date>2018-11-22T18:40:50</date>
+  <millis>1542908450063</millis>
+  <sequence>5</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='Uni'</message>
+</record>
+<record>
+  <date>2018-11-22T18:40:50</date>
+  <millis>1542908450068</millis>
+  <sequence>6</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='Banano'</message>
+</record>
+<record>
+  <date>2018-11-22T18:40:50</date>
+  <millis>1542908450075</millis>
+  <sequence>7</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='platano'</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-11-23T07:58:09</date>
+  <millis>1542956289450</millis>
+  <sequence>0</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos BD gestion usuarios</message>
+</record>
+<record>
+  <date>2018-11-23T07:58:09</date>
+  <millis>1542956289462</millis>
+  <sequence>1</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2018-11-23T07:58:09</date>
+  <millis>1542956289578</millis>
+  <sequence>2</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('Uni', 'pass')</message>
+</record>
+<record>
+  <date>2018-11-23T07:58:09</date>
+  <millis>1542956289693</millis>
+  <sequence>3</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('Banano', 'pass')</message>
+</record>
+<record>
+  <date>2018-11-23T07:58:09</date>
+  <millis>1542956289839</millis>
+  <sequence>4</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('platano', 'pass')</message>
+</record>
+<record>
+  <date>2018-11-23T07:58:09</date>
+  <millis>1542956289841</millis>
+  <sequence>5</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='Uni'</message>
+</record>
+<record>
+  <date>2018-11-23T07:58:09</date>
+  <millis>1542956289843</millis>
+  <sequence>6</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='Banano'</message>
+</record>
+<record>
+  <date>2018-11-23T07:58:09</date>
+  <millis>1542956289848</millis>
+  <sequence>7</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='platano'</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-11-23T08:02:09</date>
+  <millis>1542956529673</millis>
+  <sequence>0</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos BD gestion usuarios</message>
+</record>
+<record>
+  <date>2018-11-23T08:02:09</date>
+  <millis>1542956529677</millis>
+  <sequence>1</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2018-11-23T08:02:09</date>
+  <millis>1542956529847</millis>
+  <sequence>2</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('Uni', 'pass')</message>
+</record>
+<record>
+  <date>2018-11-23T08:02:09</date>
+  <millis>1542956529944</millis>
+  <sequence>3</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('Banano', 'pass')</message>
+</record>
+<record>
+  <date>2018-11-23T08:02:10</date>
+  <millis>1542956530058</millis>
+  <sequence>4</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('platano', 'pass')</message>
+</record>
+<record>
+  <date>2018-11-23T08:02:10</date>
+  <millis>1542956530067</millis>
+  <sequence>5</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='Uni'</message>
+</record>
+<record>
+  <date>2018-11-23T08:02:10</date>
+  <millis>1542956530078</millis>
+  <sequence>6</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='Banano'</message>
+</record>
+<record>
+  <date>2018-11-23T08:02:10</date>
+  <millis>1542956530085</millis>
+  <sequence>7</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='platano'</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-11-23T08:10:23</date>
+  <millis>1542957023514</millis>
+  <sequence>0</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos BD gestion usuarios</message>
+</record>
+<record>
+  <date>2018-11-23T08:10:23</date>
+  <millis>1542957023523</millis>
+  <sequence>1</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2018-11-23T08:10:23</date>
+  <millis>1542957023732</millis>
+  <sequence>2</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('Uni', 'pass')</message>
+</record>
+<record>
+  <date>2018-11-23T08:10:23</date>
+  <millis>1542957023892</millis>
+  <sequence>3</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('Banano', 'pass')</message>
+</record>
+<record>
+  <date>2018-11-23T08:10:23</date>
+  <millis>1542957023998</millis>
+  <sequence>4</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('platano', 'pass')</message>
+</record>
+<record>
+  <date>2018-11-23T08:10:24</date>
+  <millis>1542957024004</millis>
+  <sequence>5</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='Uni'</message>
+</record>
+<record>
+  <date>2018-11-23T08:10:24</date>
+  <millis>1542957024009</millis>
+  <sequence>6</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='Banano'</message>
+</record>
+<record>
+  <date>2018-11-23T08:10:24</date>
+  <millis>1542957024018</millis>
+  <sequence>7</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='platano'</message>
+</record>
+<record>
+  <date>2018-11-23T08:10:24</date>
+  <millis>1542957024029</millis>
+  <sequence>8</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='jajajajajaaj'</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-11-23T08:15:07</date>
+  <millis>1542957307303</millis>
+  <sequence>0</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos BD gestion usuarios</message>
+</record>
+<record>
+  <date>2018-11-23T08:15:07</date>
+  <millis>1542957307307</millis>
+  <sequence>1</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2018-11-23T08:15:07</date>
+  <millis>1542957307418</millis>
+  <sequence>2</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('Uni', 'pass1')</message>
+</record>
+<record>
+  <date>2018-11-23T08:15:07</date>
+  <millis>1542957307540</millis>
+  <sequence>3</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('Banano', 'pass2')</message>
+</record>
+<record>
+  <date>2018-11-23T08:15:07</date>
+  <millis>1542957307653</millis>
+  <sequence>4</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('platano', 'pass3')</message>
+</record>
+<record>
+  <date>2018-11-23T08:15:07</date>
+  <millis>1542957307664</millis>
+  <sequence>5</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='Uni'</message>
+</record>
+<record>
+  <date>2018-11-23T08:15:07</date>
+  <millis>1542957307673</millis>
+  <sequence>6</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='Banano'</message>
+</record>
+<record>
+  <date>2018-11-23T08:15:07</date>
+  <millis>1542957307684</millis>
+  <sequence>7</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='platano'</message>
+</record>
+<record>
+  <date>2018-11-23T08:15:07</date>
+  <millis>1542957307695</millis>
+  <sequence>8</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='jajajajajaaj'</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-11-23T08:15:38</date>
+  <millis>1542957338911</millis>
+  <sequence>0</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos BD gestion usuarios</message>
+</record>
+<record>
+  <date>2018-11-23T08:15:38</date>
+  <millis>1542957338915</millis>
+  <sequence>1</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2018-11-23T08:15:39</date>
+  <millis>1542957339081</millis>
+  <sequence>2</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('Uni', 'pass1')</message>
+</record>
+<record>
+  <date>2018-11-23T08:15:39</date>
+  <millis>1542957339197</millis>
+  <sequence>3</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('Banano', 'pass2')</message>
+</record>
+<record>
+  <date>2018-11-23T08:15:39</date>
+  <millis>1542957339290</millis>
+  <sequence>4</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('platano', 'pass3')</message>
+</record>
+<record>
+  <date>2018-11-23T08:15:39</date>
+  <millis>1542957339292</millis>
+  <sequence>5</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='Uni'</message>
+</record>
+<record>
+  <date>2018-11-23T08:15:39</date>
+  <millis>1542957339293</millis>
+  <sequence>6</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='Banano'</message>
+</record>
+<record>
+  <date>2018-11-23T08:15:39</date>
+  <millis>1542957339295</millis>
+  <sequence>7</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='platano'</message>
+</record>
+<record>
+  <date>2018-11-23T08:15:39</date>
+  <millis>1542957339296</millis>
+  <sequence>8</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='jajajajajaaj'</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-11-23T08:16:19</date>
+  <millis>1542957379684</millis>
+  <sequence>0</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos BD gestion usuarios</message>
+</record>
+<record>
+  <date>2018-11-23T08:16:19</date>
+  <millis>1542957379897</millis>
+  <sequence>1</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2018-11-23T08:16:20</date>
+  <millis>1542957380011</millis>
+  <sequence>2</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('Uni', 'pass1')</message>
+</record>
+<record>
+  <date>2018-11-23T08:16:20</date>
+  <millis>1542957380142</millis>
+  <sequence>3</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('Banano', 'pass2')</message>
+</record>
+<record>
+  <date>2018-11-23T08:16:20</date>
+  <millis>1542957380274</millis>
+  <sequence>4</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD fila añadida 1 fila	insert into Usuario values('platano', 'pass3')</message>
+</record>
+<record>
+  <date>2018-11-23T08:16:20</date>
+  <millis>1542957380287</millis>
+  <sequence>5</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='Uni'</message>
+</record>
+<record>
+  <date>2018-11-23T08:16:20</date>
+  <millis>1542957380294</millis>
+  <sequence>6</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='Banano'</message>
+</record>
+<record>
+  <date>2018-11-23T08:16:20</date>
+  <millis>1542957380301</millis>
+  <sequence>7</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='platano'</message>
+</record>
+<record>
+  <date>2018-11-23T08:16:20</date>
+  <millis>1542957380304</millis>
+  <sequence>8</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='jajajajajaaj'</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-11-23T08:53:09</date>
+  <millis>1542959589468</millis>
+  <sequence>0</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos BD gestion usuarios</message>
+</record>
+<record>
+  <date>2018-11-23T08:53:09</date>
+  <millis>1542959589486</millis>
+  <sequence>1</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2018-11-23T08:53:09</date>
+  <millis>1542959589486</millis>
+  <sequence>2</sequence>
+  <logger>Logger BD</logger>
+  <level>SEVERE</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Error en BD	select * from Usuario where nick = 'Uni'</message>
+  <exception>
+    <message>org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: nick)</message>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>newSQLException</method>
+      <line>909</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>newSQLException</method>
+      <line>921</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>throwex</method>
+      <line>886</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.NativeDB</class>
+      <method>prepare_utf8</method>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.NativeDB</class>
+      <method>prepare</method>
+      <line>127</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>prepare</method>
+      <line>227</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.jdbc3.JDBC3Statement</class>
+      <method>executeQuery</method>
+      <line>81</line>
+    </frame>
+    <frame>
+      <class>miBDprueba.MiBD</class>
+      <method>insert</method>
+      <line>84</line>
+    </frame>
+    <frame>
+      <class>miBDprueba.MiBD</class>
+      <method>main</method>
+      <line>199</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2018-11-23T08:53:09</date>
+  <millis>1542959589488</millis>
+  <sequence>3</sequence>
+  <logger>Logger BD</logger>
+  <level>SEVERE</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Error en BD	select * from Usuario where nick = 'Banano'</message>
+  <exception>
+    <message>org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: nick)</message>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>newSQLException</method>
+      <line>909</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>newSQLException</method>
+      <line>921</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>throwex</method>
+      <line>886</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.NativeDB</class>
+      <method>prepare_utf8</method>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.NativeDB</class>
+      <method>prepare</method>
+      <line>127</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>prepare</method>
+      <line>227</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.jdbc3.JDBC3Statement</class>
+      <method>executeQuery</method>
+      <line>81</line>
+    </frame>
+    <frame>
+      <class>miBDprueba.MiBD</class>
+      <method>insert</method>
+      <line>84</line>
+    </frame>
+    <frame>
+      <class>miBDprueba.MiBD</class>
+      <method>main</method>
+      <line>200</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2018-11-23T08:53:09</date>
+  <millis>1542959589489</millis>
+  <sequence>4</sequence>
+  <logger>Logger BD</logger>
+  <level>SEVERE</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Error en BD	select * from Usuario where nick = 'platano'</message>
+  <exception>
+    <message>org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: nick)</message>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>newSQLException</method>
+      <line>909</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>newSQLException</method>
+      <line>921</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>throwex</method>
+      <line>886</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.NativeDB</class>
+      <method>prepare_utf8</method>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.NativeDB</class>
+      <method>prepare</method>
+      <line>127</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>prepare</method>
+      <line>227</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.jdbc3.JDBC3Statement</class>
+      <method>executeQuery</method>
+      <line>81</line>
+    </frame>
+    <frame>
+      <class>miBDprueba.MiBD</class>
+      <method>insert</method>
+      <line>84</line>
+    </frame>
+    <frame>
+      <class>miBDprueba.MiBD</class>
+      <method>main</method>
+      <line>201</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2018-11-23T08:53:09</date>
+  <millis>1542959589492</millis>
+  <sequence>5</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='Uni'</message>
+</record>
+<record>
+  <date>2018-11-23T08:53:09</date>
+  <millis>1542959589493</millis>
+  <sequence>6</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='Banano'</message>
+</record>
+<record>
+  <date>2018-11-23T08:53:09</date>
+  <millis>1542959589494</millis>
+  <sequence>7</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='platano'</message>
+</record>
+<record>
+  <date>2018-11-23T08:53:09</date>
+  <millis>1542959589495</millis>
+  <sequence>8</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='jajajajajaaj'</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-11-23T08:53:31</date>
+  <millis>1542959611287</millis>
+  <sequence>0</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos BD gestion usuarios</message>
+</record>
+<record>
+  <date>2018-11-23T08:53:31</date>
+  <millis>1542959611294</millis>
+  <sequence>1</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2018-11-23T08:53:31</date>
+  <millis>1542959611295</millis>
+  <sequence>2</sequence>
+  <logger>Logger BD</logger>
+  <level>SEVERE</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Error en BD	select * from Usuario where usuario = 'Uni'</message>
+  <exception>
+    <message>org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: usuario)</message>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>newSQLException</method>
+      <line>909</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>newSQLException</method>
+      <line>921</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>throwex</method>
+      <line>886</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.NativeDB</class>
+      <method>prepare_utf8</method>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.NativeDB</class>
+      <method>prepare</method>
+      <line>127</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>prepare</method>
+      <line>227</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.jdbc3.JDBC3Statement</class>
+      <method>executeQuery</method>
+      <line>81</line>
+    </frame>
+    <frame>
+      <class>miBDprueba.MiBD</class>
+      <method>insert</method>
+      <line>84</line>
+    </frame>
+    <frame>
+      <class>miBDprueba.MiBD</class>
+      <method>main</method>
+      <line>199</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2018-11-23T08:53:31</date>
+  <millis>1542959611299</millis>
+  <sequence>3</sequence>
+  <logger>Logger BD</logger>
+  <level>SEVERE</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Error en BD	select * from Usuario where usuario = 'Banano'</message>
+  <exception>
+    <message>org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: usuario)</message>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>newSQLException</method>
+      <line>909</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>newSQLException</method>
+      <line>921</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>throwex</method>
+      <line>886</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.NativeDB</class>
+      <method>prepare_utf8</method>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.NativeDB</class>
+      <method>prepare</method>
+      <line>127</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>prepare</method>
+      <line>227</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.jdbc3.JDBC3Statement</class>
+      <method>executeQuery</method>
+      <line>81</line>
+    </frame>
+    <frame>
+      <class>miBDprueba.MiBD</class>
+      <method>insert</method>
+      <line>84</line>
+    </frame>
+    <frame>
+      <class>miBDprueba.MiBD</class>
+      <method>main</method>
+      <line>200</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2018-11-23T08:53:31</date>
+  <millis>1542959611300</millis>
+  <sequence>4</sequence>
+  <logger>Logger BD</logger>
+  <level>SEVERE</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Error en BD	select * from Usuario where usuario = 'platano'</message>
+  <exception>
+    <message>org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such column: usuario)</message>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>newSQLException</method>
+      <line>909</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>newSQLException</method>
+      <line>921</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>throwex</method>
+      <line>886</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.NativeDB</class>
+      <method>prepare_utf8</method>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.NativeDB</class>
+      <method>prepare</method>
+      <line>127</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>prepare</method>
+      <line>227</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.jdbc3.JDBC3Statement</class>
+      <method>executeQuery</method>
+      <line>81</line>
+    </frame>
+    <frame>
+      <class>miBDprueba.MiBD</class>
+      <method>insert</method>
+      <line>84</line>
+    </frame>
+    <frame>
+      <class>miBDprueba.MiBD</class>
+      <method>main</method>
+      <line>201</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2018-11-23T08:53:31</date>
+  <millis>1542959611303</millis>
+  <sequence>5</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='Uni'</message>
+</record>
+<record>
+  <date>2018-11-23T08:53:31</date>
+  <millis>1542959611305</millis>
+  <sequence>6</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='Banano'</message>
+</record>
+<record>
+  <date>2018-11-23T08:53:31</date>
+  <millis>1542959611306</millis>
+  <sequence>7</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='platano'</message>
+</record>
+<record>
+  <date>2018-11-23T08:53:31</date>
+  <millis>1542959611307</millis>
+  <sequence>8</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='jajajajajaaj'</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-11-23T08:53:48</date>
+  <millis>1542959628815</millis>
+  <sequence>0</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos BD gestion usuarios</message>
+</record>
+<record>
+  <date>2018-11-23T08:53:48</date>
+  <millis>1542959628821</millis>
+  <sequence>1</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2018-11-23T08:53:48</date>
+  <millis>1542959628823</millis>
+  <sequence>2</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='Uni'</message>
+</record>
+<record>
+  <date>2018-11-23T08:53:48</date>
+  <millis>1542959628824</millis>
+  <sequence>3</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='Banano'</message>
+</record>
+<record>
+  <date>2018-11-23T08:53:48</date>
+  <millis>1542959628824</millis>
+  <sequence>4</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='platano'</message>
+</record>
+<record>
+  <date>2018-11-23T08:53:48</date>
+  <millis>1542959628825</millis>
+  <sequence>5</sequence>
+  <logger>Logger BD</logger>
+  <level>INFO</level>
+  <class>miBDprueba.MiBD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from Usuario where nombre='jajajajajaaj'</message>
+</record>
+</log>
