@@ -1,0 +1,16 @@
+TreeMap
+	tendrias que programar el metodo compareTo. - menos, + mayor, 
+	tiene orden pero no posicion
+	tendriamos que hacer implements en el objeto que queremos meter en el mapa tal que:
+			public Usuario implements Comparable<Usuario>(){
+				[CODIGO]
+			}
+			@Override
+			public int compareTo(Usuario u){
+				return nombre.compareTo(u.nombre);
+			}  
+			
+HashMap
+	Se comporta en tiempoo cte en vez de logaritmico.
+	si no necesitas la posicion lo usas.
+	No hay que implementar ninguna interfaz porque TODO objeto es hasheable
