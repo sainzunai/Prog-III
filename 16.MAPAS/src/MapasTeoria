@@ -12,7 +12,7 @@ TreeMap
 			
 HashMap
 	Se comporta en tiempoo cte en vez de logaritmico.
-	si no necesitas la posicion lo usas.
+	Se utiliza cuando no necesitas la posicion -- no tiene orden.
 	No hay que implementar ninguna interfaz porque TODO objeto es hasheable
 	
 	
