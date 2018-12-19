@@ -1,4 +1,4 @@
-TreeMap
+TreeSet
 	tendrias que programar el metodo compareTo. - menos, + mayor, 
 	tiene orden pero no posicion
 	tendriamos que hacer implements en el objeto que queremos meter en el mapa tal que:
@@ -10,6 +10,14 @@ TreeMap
 				return nombre.compareTo(u.nombre);
 			}  
 			
+	Para iterar:
+	Iterator<UsuarioTwitter> itr = usuariosConAmigos.iterator();
+		while(itr.hasNext()){
+		    UsuarioTwitter u = itr.next();
+		}
+		
+	accedemos a un treeset iterando o solo pidiendo el mayor o el menor.
+			
 HashMap
 	Se comporta en tiempoo cte en vez de logaritmico.
 	Se utiliza cuando no necesitas la posicion -- no tiene orden.
@@ -17,3 +25,9 @@ HashMap
 	
 	
 Instanceof¿?¿?¿
+
+
+ITERAR SOBRE MAPA
+for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+    System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());
+}
