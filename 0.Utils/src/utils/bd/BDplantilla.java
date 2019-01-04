@@ -143,7 +143,7 @@ public class BDplantilla {
 				if (val!=1) {  // Se tiene que añadir 1 - error si no
 					log( Level.SEVERE, "Error en insert de BD\t" + sentSQL, null );
 					return false;  
-			}else {
+			}else {//esta parte de logs esta mal. funciona bien per indica mal
 				System.out.println("El elemento EXISTE, NO se insertara en la tabla");
 			}
 			
