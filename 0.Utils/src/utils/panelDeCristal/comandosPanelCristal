@@ -1,0 +1,7 @@
+	private JPanel pCristal = (JPanel) this.getGlassPane();
+	
+	
+	
+	pCristal.add(new JLabel("pruebaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"), BorderLayout.CENTER);
+		pCristal.setVisible(true);
+		pCristal.setBorder(BorderFactory.createLineBorder(Color.CYAN, 10));
