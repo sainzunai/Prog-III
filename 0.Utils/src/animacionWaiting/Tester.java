@@ -1,6 +1,11 @@
 package animacionWaiting;
-import javax.swing.*;
-import java.awt.*;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Graphics;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 final public class Tester {
 
@@ -28,7 +33,7 @@ final public class Tester {
         frame.getContentPane().add(BorderLayout.CENTER, drawPanel);
 
         frame.setVisible(true);
-        frame.setResizable(true);
+        frame.setResizable(false);
         frame.setSize(300, 300);
         frame.setLocation(375, 55);
         moveIt();
@@ -49,7 +54,7 @@ final public class Tester {
 
     private void moveIt() {
         while(true){
-            if(oneX >= drawPanel.getWidth()){
+            if(oneX >= 283){
                 right = false;
                 left = true;
             }
@@ -57,7 +62,7 @@ final public class Tester {
                 right = true;
                 left = false;
             }
-            if(oneY >= drawPanel.getHeight()){
+            if(oneY >= 259){
                 up = true;
                 down = false;
             }
@@ -78,7 +83,7 @@ final public class Tester {
                 oneX++;
             }
             try{
-                Thread.sleep(5);
+                Thread.sleep(10);
             } catch (Exception exc){}
             frame.repaint();
         }
