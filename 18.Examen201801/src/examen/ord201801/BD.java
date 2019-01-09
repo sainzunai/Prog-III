@@ -211,8 +211,20 @@ public class BD {
 	}
 	
 	// TAREA 4 - Métodos adicionales sobre la tabla arbol
-	
-	
+	public static void deleteArbol(Statement st, Arbol a) {
+		String sentSQL = "";
+		try {
+			sentSQL = "delete from arbol where latitud ='" + a.getPunto().getLatitud() + "' and longitud = '"+ a.getPunto().getLongitud() + "';";
+			log( Level.INFO, "BD\t" + sentSQL, null );
+			ResultSet rs = st.executeQuery( sentSQL );
+			rs.close();
+			
+		} catch (Exception e) {
+			log( Level.SEVERE, "Error en BD\t" + sentSQL, e );
+			lastError = e;
+			e.printStackTrace();
+		}
+}
 
 	
 	/////////////////////////////////////////////////////////////////////

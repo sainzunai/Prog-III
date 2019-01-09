@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-01-09T12:23:24</date>
+  <millis>1547033004179</millis>
+  <sequence>0</sequence>
+  <logger>examen.ord201801.BD</logger>
+  <level>SEVERE</level>
+  <class>examen.ord201801.BD</class>
+  <method>log</method>
+  <thread>15</thread>
+  <message>Error en conexión de base de datos BDTarea4</message>
+  <exception>
+    <message>java.lang.ClassNotFoundException: org.sqlite.JDBC</message>
+    <frame>
+      <class>java.net.URLClassLoader</class>
+      <method>findClass</method>
+    </frame>
+    <frame>
+      <class>java.lang.ClassLoader</class>
+      <method>loadClass</method>
+    </frame>
+    <frame>
+      <class>sun.misc.Launcher$AppClassLoader</class>
+      <method>loadClass</method>
+    </frame>
+    <frame>
+      <class>java.lang.ClassLoader</class>
+      <method>loadClass</method>
+    </frame>
+    <frame>
+      <class>java.lang.Class</class>
+      <method>forName0</method>
+    </frame>
+    <frame>
+      <class>java.lang.Class</class>
+      <method>forName</method>
+    </frame>
+    <frame>
+      <class>examen.ord201801.BD</class>
+      <method>initBD</method>
+      <line>49</line>
+    </frame>
+    <frame>
+      <class>examen.ord201801.Tareas</class>
+      <method>tarea4</method>
+      <line>17</line>
+    </frame>
+    <frame>
+      <class>examen.ord201801.EdicionZonasGPS$1</class>
+      <method>actionPerformed</method>
+      <line>137</line>
+    </frame>
+    <frame>
+      <class>javax.swing.AbstractButton</class>
+      <method>fireActionPerformed</method>
+    </frame>
+    <frame>
+      <class>javax.swing.AbstractButton$Handler</class>
+      <method>actionPerformed</method>
+    </frame>
+    <frame>
+      <class>javax.swing.DefaultButtonModel</class>
+      <method>fireActionPerformed</method>
+    </frame>
+    <frame>
+      <class>javax.swing.DefaultButtonModel</class>
+      <method>setPressed</method>
+    </frame>
+    <frame>
+      <class>javax.swing.plaf.basic.BasicButtonListener</class>
+      <method>mouseReleased</method>
+    </frame>
+    <frame>
+      <class>java.awt.Component</class>
+      <method>processMouseEvent</method>
+    </frame>
+    <frame>
+      <class>javax.swing.JComponent</class>
+      <method>processMouseEvent</method>
+    </frame>
+    <frame>
+      <class>java.awt.Component</class>
+      <method>processEvent</method>
+    </frame>
+    <frame>
+      <class>java.awt.Container</class>
+      <method>processEvent</method>
+    </frame>
+    <frame>
+      <class>java.awt.Component</class>
+      <method>dispatchEventImpl</method>
+    </frame>
+    <frame>
+      <class>java.awt.Container</class>
+      <method>dispatchEventImpl</method>
+    </frame>
+    <frame>
+      <class>java.awt.Component</class>
+      <method>dispatchEvent</method>
+    </frame>
+    <frame>
+      <class>java.awt.LightweightDispatcher</class>
+      <method>retargetMouseEvent</method>
+    </frame>
+    <frame>
+      <class>java.awt.LightweightDispatcher</class>
+      <method>processMouseEvent</method>
+    </frame>
+    <frame>
+      <class>java.awt.LightweightDispatcher</class>
+      <method>dispatchEvent</method>
+    </frame>
+    <frame>
+      <class>java.awt.Container</class>
+      <method>dispatchEventImpl</method>
+    </frame>
+    <frame>
+      <class>java.awt.Window</class>
+      <method>dispatchEventImpl</method>
+    </frame>
+    <frame>
+      <class>java.awt.Component</class>
+      <method>dispatchEvent</method>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue</class>
+      <method>dispatchEventImpl</method>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue</class>
+      <method>access$500</method>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue$3</class>
+      <method>run</method>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue$3</class>
+      <method>run</method>
+    </frame>
+    <frame>
+      <class>java.security.AccessController</class>
+      <method>doPrivileged</method>
+    </frame>
+    <frame>
+      <class>java.security.ProtectionDomain$JavaSecurityAccessImpl</class>
+      <method>doIntersectionPrivilege</method>
+    </frame>
+    <frame>
+      <class>java.security.ProtectionDomain$JavaSecurityAccessImpl</class>
+      <method>doIntersectionPrivilege</method>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue$4</class>
+      <method>run</method>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue$4</class>
+      <method>run</method>
+    </frame>
+    <frame>
+      <class>java.security.AccessController</class>
+      <method>doPrivileged</method>
+    </frame>
+    <frame>
+      <class>java.security.ProtectionDomain$JavaSecurityAccessImpl</class>
+      <method>doIntersectionPrivilege</method>
+    </frame>
+    <frame>
+      <class>java.awt.EventQueue</class>
+      <method>dispatchEvent</method>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>pumpOneEventForFilters</method>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>pumpEventsForFilter</method>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>pumpEventsForHierarchy</method>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>pumpEvents</method>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>pumpEvents</method>
+    </frame>
+    <frame>
+      <class>java.awt.EventDispatchThread</class>
+      <method>run</method>
+    </frame>
+  </exception>
+</record>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-01-09T12:24:08</date>
+  <millis>1547033048943</millis>
+  <sequence>0</sequence>
+  <logger>examen.ord201801.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201801.BD</class>
+  <method>log</method>
+  <thread>15</thread>
+  <message>Conectada base de datos BDTarea4</message>
+</record>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-01-09T12:32:14</date>
+  <millis>1547033534224</millis>
+  <sequence>0</sequence>
+  <logger>examen.ord201801.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201801.BD</class>
+  <method>log</method>
+  <thread>15</thread>
+  <message>Conectada base de datos BDTarea4</message>
+</record>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-01-09T13:09:56</date>
+  <millis>1547035796999</millis>
+  <sequence>0</sequence>
+  <logger>examen.ord201801.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201801.BD</class>
+  <method>log</method>
+  <thread>15</thread>
+  <message>Conectada base de datos BDArboles.db</message>
+</record>
+<record>
+  <date>2019-01-09T13:09:57</date>
+  <millis>1547035797181</millis>
+  <sequence>1</sequence>
+  <logger>examen.ord201801.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201801.BD</class>
+  <method>log</method>
+  <thread>15</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2019-01-09T13:09:57</date>
+  <millis>1547035797184</millis>
+  <sequence>2</sequence>
+  <logger>examen.ord201801.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201801.BD</class>
+  <method>log</method>
+  <thread>15</thread>
+  <message>BD	select * from arbol where zona='22'</message>
+</record>
+<record>
+  <date>2019-01-09T13:09:57</date>
+  <millis>1547035797291</millis>
+  <sequence>3</sequence>
+  <logger>examen.ord201801.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201801.BD</class>
+  <method>log</method>
+  <thread>19</thread>
+  <message>BD añadida 1 fila	insert into arbol values('22', 43.3043764608386, -2.97727904177508, 'Álamo', 24, -8355712)</message>
+</record>
+<record>
+  <date>2019-01-09T13:10:49</date>
+  <millis>1547035849039</millis>
+  <sequence>4</sequence>
+  <logger>examen.ord201801.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201801.BD</class>
+  <method>log</method>
+  <thread>15</thread>
+  <message>Conectada base de datos BDArboles.db</message>
+</record>
+<record>
+  <date>2019-01-09T13:10:49</date>
+  <millis>1547035849041</millis>
+  <sequence>5</sequence>
+  <logger>examen.ord201801.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201801.BD</class>
+  <method>log</method>
+  <thread>15</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2019-01-09T13:10:49</date>
+  <millis>1547035849043</millis>
+  <sequence>6</sequence>
+  <logger>examen.ord201801.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201801.BD</class>
+  <method>log</method>
+  <thread>15</thread>
+  <message>BD	select * from arbol where zona='59'</message>
+</record>
+<record>
+  <date>2019-01-09T13:10:49</date>
+  <millis>1547035849241</millis>
+  <sequence>7</sequence>
+  <logger>examen.ord201801.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201801.BD</class>
+  <method>log</method>
+  <thread>19</thread>
+  <message>BD añadida 1 fila	insert into arbol values('59', 43.3166117825358, -2.97075032854276, 'Acebo', 14, -8355712)</message>
+</record>
+<record>
+  <date>2019-01-09T13:10:49</date>
+  <millis>1547035849318</millis>
+  <sequence>8</sequence>
+  <logger>examen.ord201801.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201801.BD</class>
+  <method>log</method>
+  <thread>19</thread>
+  <message>BD añadida 1 fila	insert into arbol values('59', 43.3165742686487, -2.97092481007311, 'Acer negundo', 4, -8355712)</message>
+</record>
+<record>
+  <date>2019-01-09T13:10:49</date>
+  <millis>1547035849393</millis>
+  <sequence>9</sequence>
+  <logger>examen.ord201801.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201801.BD</class>
+  <method>log</method>
+  <thread>19</thread>
+  <message>BD añadida 1 fila	insert into arbol values('59', 43.3176958566132, -2.97304952406656, 'Pino', 98, -8355712)</message>
+</record>
+<record>
+  <date>2019-01-09T13:10:49</date>
+  <millis>1547035849457</millis>
+  <sequence>10</sequence>
+  <logger>examen.ord201801.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201801.BD</class>
+  <method>log</method>
+  <thread>19</thread>
+  <message>BD añadida 1 fila	insert into arbol values('59', 43.3170986585716, -2.97193207303171, 'Arce menor', 52, -8355712)</message>
+</record>
+<record>
+  <date>2019-01-09T13:10:49</date>
+  <millis>1547035849557</millis>
+  <sequence>11</sequence>
+  <logger>examen.ord201801.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201801.BD</class>
+  <method>log</method>
+  <thread>19</thread>
+  <message>BD añadida 1 fila	insert into arbol values('59', 43.3169608943157, -2.97360054853343, 'Álamo', 21, -8355712)</message>
+</record>
+<record>
+  <date>2019-01-09T13:10:49</date>
+  <millis>1547035849637</millis>
+  <sequence>12</sequence>
+  <logger>examen.ord201801.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201801.BD</class>
+  <method>log</method>
+  <thread>19</thread>
+  <message>BD añadida 1 fila	insert into arbol values('59', 43.3172053031972, -2.97107803180982, 'Morera japonesa', 100, -8355712)</message>
+</record>
+<record>
+  <date>2019-01-09T13:10:49</date>
+  <millis>1547035849724</millis>
+  <sequence>13</sequence>
+  <logger>examen.ord201801.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201801.BD</class>
+  <method>log</method>
+  <thread>19</thread>
+  <message>BD añadida 1 fila	insert into arbol values('59', 43.3175700505892, -2.97207794539956, 'Morera japonesa', 34, -8355712)</message>
+</record>
+<record>
+  <date>2019-01-09T13:10:49</date>
+  <millis>1547035849799</millis>
+  <sequence>14</sequence>
+  <logger>examen.ord201801.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201801.BD</class>
+  <method>log</method>
+  <thread>19</thread>
+  <message>BD añadida 1 fila	insert into arbol values('59', 43.3169936301599, -2.97150133600972, 'Naranjo', 58, -8355712)</message>
+</record>
+<record>
+  <date>2019-01-09T13:10:49</date>
+  <millis>1547035849873</millis>
+  <sequence>15</sequence>
+  <logger>examen.ord201801.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201801.BD</class>
+  <method>log</method>
+  <thread>19</thread>
+  <message>BD añadida 1 fila	insert into arbol values('59', 43.3171176476791, -2.97293011682027, 'Abeto blanco', 76, -8355712)</message>
+</record>
+<record>
+  <date>2019-01-09T13:10:49</date>
+  <millis>1547035849976</millis>
+  <sequence>16</sequence>
+  <logger>examen.ord201801.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201801.BD</class>
+  <method>log</method>
+  <thread>19</thread>
+  <message>BD añadida 1 fila	insert into arbol values('59', 43.3170649357956, -2.97412276509196, 'Abeto blanco', 16, -8355712)</message>
+</record>
+<record>
+  <date>2019-01-09T13:10:50</date>
+  <millis>1547035850055</millis>
+  <sequence>17</sequence>
+  <logger>examen.ord201801.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201801.BD</class>
+  <method>log</method>
+  <thread>19</thread>
+  <message>BD añadida 1 fila	insert into arbol values('59', 43.3172522726893, -2.97369284575115, 'Ciruelo', 62, -8355712)</message>
+</record>
+<record>
+  <date>2019-01-09T13:10:50</date>
+  <millis>1547035850140</millis>
+  <sequence>18</sequence>
+  <logger>examen.ord201801.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201801.BD</class>
+  <method>log</method>
+  <thread>19</thread>
+  <message>BD añadida 1 fila	insert into arbol values('59', 43.317256684118, -2.97337459675436, 'Acer palmatum', 64, -8355712)</message>
+</record>
+<record>
+  <date>2019-01-09T13:10:50</date>
+  <millis>1547035850237</millis>
+  <sequence>19</sequence>
+  <logger>examen.ord201801.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201801.BD</class>
+  <method>log</method>
+  <thread>19</thread>
+  <message>BD añadida 1 fila	insert into arbol values('59', 43.3174427134963, -2.97268423310283, 'Pino', 56, -8355712)</message>
+</record>
+<record>
+  <date>2019-01-09T13:10:58</date>
+  <millis>1547035858416</millis>
+  <sequence>20</sequence>
+  <logger>examen.ord201801.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201801.BD</class>
+  <method>log</method>
+  <thread>15</thread>
+  <message>Conectada base de datos BDArboles.db</message>
+</record>
+<record>
+  <date>2019-01-09T13:10:58</date>
+  <millis>1547035858417</millis>
+  <sequence>21</sequence>
+  <logger>examen.ord201801.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201801.BD</class>
+  <method>log</method>
+  <thread>15</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2019-01-09T13:10:58</date>
+  <millis>1547035858417</millis>
+  <sequence>22</sequence>
+  <logger>examen.ord201801.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201801.BD</class>
+  <method>log</method>
+  <thread>15</thread>
+  <message>BD	select * from arbol where zona='59'</message>
+</record>
