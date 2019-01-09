@@ -1,7 +1,21 @@
 package examen.ord201801;
 
-import java.awt.*;
-import java.awt.event.*;
+import java.awt.AlphaComposite;
+import java.awt.BasicStroke;
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Point;
+import java.awt.RenderingHints;
+import java.awt.Stroke;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.awt.image.BufferedImage;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -9,8 +23,21 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Properties;
 
-import javax.swing.*;
-import javax.swing.event.*;
+import javax.swing.DefaultListModel;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JList;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.JToggleButton;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
+import javax.swing.table.DefaultTableModel;
 
 import examen.ord201801.item.Arbol;
 
@@ -81,7 +108,9 @@ public class EdicionZonasGPS extends JFrame {
 	boolean dibujadoArboles;            // Si es true se dibujan los árboles, si no no se dibujan
 	
 	// TAREA 3 - Atributos para la tarea
-
+	JTable tDatos;
+	DefaultTableModel mDatos;
+	
 	
 	/** Construye una ventana de dibujado y edición de zonas GPS
 	 */
@@ -190,6 +219,35 @@ public class EdicionZonasGPS extends JFrame {
 		cargaProperties();
 		
 		// TAREA 3
+//		String[] columnas = {"Zona", "Area", "Pto", "Latitud", "Longitud"};
+		mDatos = new DefaultTableModel() {
+			{setColumnIdentifiers(new Object[] {"Zona", "Area", "Pto", "Latitud", "Longitud"});}
+			
+			@Override
+			public void setValueAt(Object aValue, int row, int column) {
+				if (column>2) {
+					super.setValueAt(aValue, row, column);
+					Zona zona = GrupoZonas.jardinesErandio.getZona( (String) mDatos.getValueAt( row, 0 ) );
+					int subzona = (Integer) mDatos.getValueAt( row, 1 );
+					int punto = (Integer) mDatos.getValueAt( row, 2 );
+					if (column==3)
+						zona.getPuntosGPS().get( subzona ).get( punto ).setLatitud( Double.parseDouble((String)aValue) );
+					else
+						zona.getPuntosGPS().get( subzona ).get( punto ).setLongitud( Double.parseDouble((String)aValue) );
+					// Caso especial si es el primer punto hay que cambiar también el último
+					if (punto==0) {
+						if (column==3)
+							zona.getPuntosGPS().get( subzona ).get( zona.getPuntosGPS().get( subzona ).size()-1 ).setLatitud( Double.parseDouble((String)aValue) );
+						else
+							zona.getPuntosGPS().get( subzona ).get( zona.getPuntosGPS().get( subzona ).size()-1 ).setLongitud( Double.parseDouble((String)aValue) );
+					}
+					calculaMapa();  // Redibuja con el cambio
+				}
+			}
+		};
+		tDatos = new JTable(mDatos);
+		
+		
 		// Creación de JTable y atributos relacionados, y asignación a la izquierda de la ventana
 		// Si se realiza, modificación de datos del punto si hay edición, y redibujado de la ventana en ese caso. 
 	}

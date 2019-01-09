@@ -1,6 +1,12 @@
+Tree - conserva orden. Mas lento que hash. Tiempo logaritmico
+Map - guarda key unica y value
+Set - guarda objeto
+
+
 TreeSet
 	tendrias que programar el metodo compareTo. - menos, + mayor, 
 	tiene orden pero no posicion
+	rapido para muchos objetos
 	tendriamos que hacer implements en el objeto que queremos meter en el mapa tal que:
 			public Usuario implements Comparable<Usuario>(){
 				[CODIGO]
@@ -17,7 +23,11 @@ TreeSet
 		}
 		
 	accedemos a un treeset iterando o solo pidiendo el mayor o el menor.
-			
+
+TreeMap
+	lo mismo que treeset pero esta vez las operaciones se obtienen en tiempo cte. Ordenado (orden en el que lo metes) y eficiente.
+	
+				
 HashMap
 	Se comporta en tiempoo cte en vez de logaritmico.
 	Se utiliza cuando no necesitas la posicion -- no tiene orden.
@@ -26,8 +36,32 @@ HashMap
 	
 Instanceof¿?¿?¿
 
+ITERAR EN GENERAL
 
-ITERAR SOBRE MAPA
-for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-    System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());
-}
+	while (iterador.hasNext()){
+	 ... = iterador.next(); 
+	}
+
+OBTENER ITERADOR MAPA
+
+	Sabiendo el valor key obtenemos el objeto con mapa.get(key);
+	
+	Iterator<objetoAlmacenado> iterador = mapa.values().iterator();
+	
+	while (iterador.hasNext()){
+	 ... = iterador.next(); 
+	}
+
+	-a lo de abajo no hacer mucho caso:
+	for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+	    System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());
+	}
+	
+OBTENER KEYS DE UN MAPA
+	for (String s : mapa.keySet()) {
+    		ret.add( s );
+    	}
+    	
+OBTENER ITERADOR DE UN SET
+	miSet.iterator();
+	

@@ -2,6 +2,7 @@ package examen.ord201801;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.TreeMap;
 import java.util.TreeSet;
 import examen.ord201801.item.Arbol;
 
@@ -245,14 +246,15 @@ public class GrupoZonas {
 	/** Crea un grupo de zonas geográficas vacío
 	 */
 	public GrupoZonas() {
-        setZonas = new TreeSet<>();
+        mapZonas = new TreeMap<>();
 	}
 	
 	// TAREA 2 - Modificar la estructura interna de datos de setZonas y los métodos que la usan
 	// (tendrás que cambiar algunos métodos además de getZona( String )
 	
+	
 	// Atributo - estructura de datos general de la clase
-    private TreeSet<Zona> setZonas;  // Conjunto total de todas las zonas disponibles
+    private TreeMap<String, Zona> mapZonas;  // Conjunto total de todas las zonas disponibles
     
     // Métodos públicos
 
@@ -261,8 +263,8 @@ public class GrupoZonas {
      */
     public ArrayList<String> getCodZonas() {
     	ArrayList<String> ret = new ArrayList<>();
-    	for (Zona z : setZonas) {
-    		ret.add( z.getCodigoZona() );
+    	for (String z : mapZonas.keySet()) {
+    		ret.add( z );
     	}
     	return ret;
     }
@@ -271,7 +273,7 @@ public class GrupoZonas {
      * @return	Iterador de todas las zonas
      */
     public Iterator<Zona> getIteradorZonas() {
-    	return setZonas.iterator();
+    	return mapZonas.values().iterator();
     }
     
     // TAREA 2 - La eficiencia de este método es la que tiene que ser mejorada sustancialmente
@@ -283,12 +285,8 @@ public class GrupoZonas {
      * @return  La zona cuyo código se indica, null si no existe
      */
     public Zona getZona( String codigoZona ) {
-        for (Zona t : setZonas) {
-            if (t.codigoZona.equals(codigoZona)) {
-                return t;
-            }
-        }
-        return null;
+      
+        return  mapZonas.get(codigoZona);
     }
     
     /** Añade una nueva zona al conjunto de zonas del grupo
@@ -296,14 +294,19 @@ public class GrupoZonas {
      * @return	true si la zona (identificada por su código) no existía, false si ya existía (y en ese caso no se añade)
      */
     public boolean anyadirZona( Zona zona ) {
-    	return setZonas.add( zona );
+    	if(mapZonas.containsKey(zona.codigoZona))
+    		return false;
+    	else {
+    		mapZonas.put(zona.codigoZona, zona);
+    		return true;
+    	}
     }
     
     /** Devuelve el número de zonas del grupo
      * @return	Número de zonas (>=0)
      */
     public int size() {
-    	return setZonas.size();
+    	return mapZonas.size();
     }
 	
 }
