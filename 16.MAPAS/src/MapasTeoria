@@ -1,6 +1,6 @@
-Tree - conserva orden. Mas lento que hash. Tiempo logaritmico
+Tree - conserva orden. Mas lento que hash. Tiempo logaritmico. Compare to.
 Map - guarda key unica y value
-Set - guarda objeto
+Set - guarda objeto no mas
 
 
 TreeSet
@@ -22,19 +22,26 @@ TreeSet
 		    UsuarioTwitter u = itr.next();
 		}
 		
-	accedemos a un treeset iterando o solo pidiendo el mayor o el menor.
+	accedemos a un treeset iterando o solo pidiendo el MAYOR o el MENOR.
 
 TreeMap
 	lo mismo que treeset pero esta vez las operaciones se obtienen en tiempo cte. Ordenado (orden en el que lo metes) y eficiente.
-	
+	tambien hay que implementar el comparable si no utilizamos como key un int o string
 				
 HashMap
 	Se comporta en tiempoo cte en vez de logaritmico.
 	Se utiliza cuando no necesitas la posicion -- no tiene orden.
 	No hay que implementar ninguna interfaz porque TODO objeto es hasheable
+	implements hasheable override hashcode - SOLO si nos pide que el codigo sea un objeto
 	
-	
-Instanceof¿?¿?¿
+(Instanceof)
+
+HashSet
+	no esta ordenado. Solo sirve como arraylist pero NO se repiten
+
+-----------------------------------------------------------
+--------------------------- METODOS -----------------------
+-----------------------------------------------------------
 
 ITERAR EN GENERAL
 
