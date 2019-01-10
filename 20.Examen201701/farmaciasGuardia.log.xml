@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-01-10T15:50:32</date>
+  <millis>1547131832996</millis>
+  <sequence>0</sequence>
+  <logger>examen.ord201701.Main</logger>
+  <level>INFO</level>
+  <class>examen.ord201701.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Inicio de ejecución de Main</message>
+</record>
+<record>
+  <date>2019-01-10T15:50:34</date>
+  <millis>1547131834049</millis>
+  <sequence>1</sequence>
+  <logger>examen.ord201701.Main</logger>
+  <level>INFO</level>
+  <class>examen.ord201701.Main</class>
+  <method>cargaFarmacias</method>
+  <thread>1</thread>
+  <message>(Tarea 2) No existe fichero de mapa previo</message>
+  <exception>
+    <message>java.lang.NullPointerException</message>
+    <frame>
+      <class>examen.ord201701.MapaFarmacias</class>
+      <method>&lt;init&gt;</method>
+      <line>31</line>
+    </frame>
+    <frame>
+      <class>examen.ord201701.Main</class>
+      <method>cargaFarmacias</method>
+      <line>71</line>
+    </frame>
+    <frame>
+      <class>examen.ord201701.Main</class>
+      <method>main</method>
+      <line>60</line>
+    </frame>
+  </exception>
+</record>
+</log>

@@ -1,6 +1,6 @@
 Tree - conserva orden. Mas lento que hash. Tiempo logaritmico. Compare to.
-Map - guarda key unica y value
-Set - guarda objeto no mas
+Map - guarda key unica y value.
+Set - guarda objeto no mas. normalmente solo se usa para saber si lo teinees o no (cosas muy basicas).
 
 
 TreeSet
@@ -13,8 +13,8 @@ TreeSet
 			}
 			@Override
 			public int compareTo(Usuario u){
-				return nombre.compareTo(u.nombre);
-			}  
+				return nombre.compareTo(u.nombre); ó if(hora<u.hora) return -1... si el criterio principal es 0, hacemos el segundo criterio.
+			}  										//tiene que devolver numero negativo, 0 o positivo.
 			
 	Para iterar:
 	Iterator<UsuarioTwitter> itr = usuariosConAmigos.iterator();
@@ -29,7 +29,7 @@ TreeMap
 	tambien hay que implementar el comparable si no utilizamos como key un int o string
 				
 HashMap
-	Se comporta en tiempoo cte en vez de logaritmico.
+	Se comporta en tiempoo cte en vez de logaritmico. -- es rapido
 	Se utiliza cuando no necesitas la posicion -- no tiene orden.
 	No hay que implementar ninguna interfaz porque TODO objeto es hasheable
 	implements hasheable override hashcode - SOLO si nos pide que el codigo sea un objeto
@@ -37,7 +37,7 @@ HashMap
 (Instanceof)
 
 HashSet
-	no esta ordenado. Solo sirve como arraylist pero NO se repiten
+	no esta ordenado. Solo sirve como arraylist pero NO se repiten. Es algo mas rapido.
 
 -----------------------------------------------------------
 --------------------------- METODOS -----------------------
