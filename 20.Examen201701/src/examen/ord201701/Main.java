@@ -11,6 +11,8 @@ import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 
+import org.w3c.dom.events.MutationEvent;
+
 public class Main {
 	
 	private static String FICHERO_FARMACIAS = "farmaciasguardia.dat";
@@ -60,7 +62,15 @@ public class Main {
 		cargaFarmacias();
 		miVentana.actualizarReloj();
 		// TAREA 3 - Lanzar hilo
-		// TODO
+		Thread hiloMovFarmacias = new Thread(new Runnable() {
+			
+			@Override
+			public void run() {
+				
+			}
+		});
+		hiloMovFarmacias.run();
+
 	}
 
 	/** Carga farmacias en memoria, en el mapa de localidad - farmacias
@@ -107,7 +117,9 @@ public class Main {
 
 	// TAREA 3 - Clase de hilo
 	// TODO
-	// public static HiloCambioPantalla hiloCambioPantalla;  // Descomentar esta línea
-	// class HiloCambioPantalla  // Crear esta clase
+	 public static HiloCambioPantalla hiloCambioPantalla;  // Descomentar esta línea
+	 class HiloCambioPantalla  extends Thread{// Crear esta clase
+//		 hiloCambioPantalla = new 
+	 }
 	
 }

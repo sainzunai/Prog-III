@@ -220,7 +220,7 @@ public class VentanaFarmacias extends JFrame {
 	/** Inicializa el formato de la jtable para que las filas de población / horario se vean en color cyan y negrita
 	 */
 	public void initFormatoTabla() {
-		jtableFarmacias.setDefaultRenderer( Object.class, new DefaultTableCellRenderer() {
+		jtableFarmacias.setDefaultRenderer( Object.class, new DefaultTableCellRenderer() {	//edita los colores de las entradas en las tablas
 			@Override
 			public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
 				Component c = super.getTableCellRendererComponent( table, value, isSelected, hasFocus, row, column );
@@ -247,16 +247,16 @@ public class VentanaFarmacias extends JFrame {
 	}
 		private MapaFarmacias mapaTodasFarmacias;
 		Runnable cargaFarmaciasTodas2 = new Runnable() { @Override public void run() {
-			modeloDatosFarmacias = new DefaultTableModel() {
+			modeloDatosFarmacias = new DefaultTableModel() {	//DEFINE LE MODELO
 				@Override
-				public boolean isCellEditable(int row, int column) {
+				public boolean isCellEditable(int row, int column) {	//COLUMNA 1 EDITABLE
 					if (column==1 && !"".equals(modeloDatosFarmacias.getValueAt( row, 2 ))) {  // Si la columna 2 no está vacía es que la 1 es dirección
 						return true;
 					}
 					return false;
 				}
 				@Override
-				public void setValueAt(Object aValue, int row, int column) {
+				public void setValueAt(Object aValue, int row, int column) {	//cambia un dato: no se muy bien que es esto
 					super.setValueAt(aValue, row, column);
 					// Cambiamos el dato en el mapa (además de en el modelo) -hay que buscarlo-:
 					for (ArrayList<FarmaciaGuardia> l : mapaTodasFarmacias.getMapaFarmacias().values()) {
@@ -266,7 +266,7 @@ public class VentanaFarmacias extends JFrame {
 							}
 						}
 					}
-				}
+				}	
 			};
 			modeloDatosFarmacias.setColumnCount( 3 );
 			modeloDatosFarmacias.setColumnIdentifiers( new Object[] { "Lugar", "Hora-Dirección", "Teléfono" } );
@@ -276,6 +276,7 @@ public class VentanaFarmacias extends JFrame {
 					if (horario != f.getHoraDesde()*100 + f.getHoraHasta()) {  // Cabecera de farmacias de misma localidad - hora
 						horario = f.getHoraDesde()*100 + f.getHoraHasta();
 						// modeloDatosFarmacias.addRow( new Object[] { "", "", "" } );
+						//METER DATOS
 						modeloDatosFarmacias.addRow( new Object[] { f.getLocalidad(), f.getHoraDesdeSt() + " - " + f.getHoraHastaSt(), "" } );
 						// modeloDatosFarmacias.addRow( new Object[] { "", "", "" } );
 					}

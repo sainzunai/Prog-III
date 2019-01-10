@@ -8,7 +8,7 @@ import java.util.Date;
 /** Clase para representar una farmacia de guardia
  * @author andoni.eguiluz @ ingenieria.deusto.es
  */
-public class FarmaciaGuardia implements Serializable {
+public class FarmaciaGuardia implements Comparable<FarmaciaGuardia>{
 	private static final long serialVersionUID = 1L;
 
 	private String localidad = "";
@@ -186,8 +186,20 @@ public class FarmaciaGuardia implements Serializable {
 
 	
 	// TAREA 6
-	// TODO
-
+	@Override
+	public int compareTo(FarmaciaGuardia o) {
+		if(this.localidad.compareTo(o.localidad) == 0) {
+			if(this.horaDesde - o.horaDesde == 0) {
+				if(this.horaHasta - o.horaHasta == 0) {
+					if(this.zona.equals(o.zona)) {
+						return this.direccion.compareTo(o.direccion);
+					}
+				}else return (int) (this.horaHasta-o.horaHasta);
+			}else return (int) (this.horaDesde - o.horaDesde);
+		}else return this.localidad.compareTo(o.localidad);
+			
+		return 0;
+	}
 	
 	// TAREA 7
 	/** Devuelve la propiedad del teléfono de la farmacia de ser capicúa. 
@@ -201,6 +213,7 @@ public class FarmaciaGuardia implements Serializable {
 	 */
 	public int calcCapicua() {
 		// TAREA 7 - Llamadas a los dos métodos siguientes
+		System.out.println(this.telefono);
 		quitaSimbolos( null, 0); // TODO
 		calcCapicua( null, 0, 0); // TODO
 		return 0;  // TODO
@@ -213,6 +226,8 @@ public class FarmaciaGuardia implements Serializable {
 		private int calcCapicua( String telefono, int carIni, int carFin ) {
 			return 0;  // TODO
 		}
+
+		
 	
 }
 

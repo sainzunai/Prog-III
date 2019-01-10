@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-01-10T19:26:05</date>
+  <millis>1547144765779</millis>
+  <sequence>0</sequence>
+  <logger>examenResuelto.ord201701.Main</logger>
+  <level>INFO</level>
+  <class>examenResuelto.ord201701.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Inicio de ejecuciÃ³n de Main</message>
+</record>
+<record>
+  <date>2019-01-10T19:26:06</date>
+  <millis>1547144766762</millis>
+  <sequence>1</sequence>
+  <logger>examenResuelto.ord201701.Main</logger>
+  <level>INFO</level>
+  <class>examenResuelto.ord201701.MapaFarmacias</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Error en carga de mapa de fichero</message>
+  <exception>
+    <message>java.io.FileNotFoundException: farmaciasguardia.dat (El sistema no puede encontrar el archivo especificado)</message>
+    <frame>
+      <class>java.io.FileInputStream</class>
+      <method>open0</method>
+    </frame>
+    <frame>
+      <class>java.io.FileInputStream</class>
+      <method>open</method>
+    </frame>
+    <frame>
+      <class>java.io.FileInputStream</class>
+      <method>&lt;init&gt;</method>
+    </frame>
+    <frame>
+      <class>java.io.FileInputStream</class>
+      <method>&lt;init&gt;</method>
+    </frame>
+    <frame>
+      <class>examenResuelto.ord201701.MapaFarmacias</class>
+      <method>&lt;init&gt;</method>
+      <line>32</line>
+    </frame>
+    <frame>
+      <class>examenResuelto.ord201701.Main</class>
+      <method>cargaFarmacias</method>
+      <line>71</line>
+    </frame>
+    <frame>
+      <class>examenResuelto.ord201701.Main</class>
+      <method>main</method>
+      <line>60</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2019-01-10T19:26:06</date>
+  <millis>1547144766766</millis>
+  <sequence>2</sequence>
+  <logger>examenResuelto.ord201701.Main</logger>
+  <level>INFO</level>
+  <class>examenResuelto.ord201701.Main</class>
+  <method>cargaFarmacias</method>
+  <thread>1</thread>
+  <message>No existe fichero de mapa previo</message>
+  <exception>
+    <message>java.lang.NullPointerException: farmaciasguardia.dat (El sistema no puede encontrar el archivo especificado)</message>
+    <frame>
+      <class>examenResuelto.ord201701.MapaFarmacias</class>
+      <method>&lt;init&gt;</method>
+      <line>41</line>
+    </frame>
+    <frame>
+      <class>examenResuelto.ord201701.Main</class>
+      <method>cargaFarmacias</method>
+      <line>71</line>
+    </frame>
+    <frame>
+      <class>examenResuelto.ord201701.Main</class>
+      <method>main</method>
+      <line>60</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2019-01-10T19:26:06</date>
+  <millis>1547144766855</millis>
+  <sequence>3</sequence>
+  <logger>examenResuelto.ord201701.Main</logger>
+  <level>INFO</level>
+  <class>examenResuelto.ord201701.MapaFarmacias</class>
+  <method>saveToFile</method>
+  <thread>1</thread>
+  <message>Guardado fichero de farmacias de 10/1</message>
+</record>
+<record>
+  <date>2019-01-10T19:26:32</date>
+  <millis>1547144792224</millis>
+  <sequence>4</sequence>
+  <logger>examenResuelto.ord201701.Main</logger>
+  <level>INFO</level>
+  <class>examenResuelto.ord201701.Main$HiloCambioPantalla</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>Hilo de cambio de pantalla interrumpido</message>
+</record>
+<record>
+  <date>2019-01-10T19:26:32</date>
+  <millis>1547144792225</millis>
+  <sequence>5</sequence>
+  <logger>examenResuelto.ord201701.Main</logger>
+  <level>INFO</level>
+  <class>examenResuelto.ord201701.Main$HiloCambioPantalla</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>Final de hilo de actualización de pantalla</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-01-10T19:37:37</date>
+  <millis>1547145457042</millis>
+  <sequence>0</sequence>
+  <logger>examenResuelto.ord201701.Main</logger>
+  <level>INFO</level>
+  <class>examenResuelto.ord201701.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Inicio de ejecuciÃ³n de Main</message>
+</record>
+<record>
+  <date>2019-01-10T19:37:37</date>
+  <millis>1547145457914</millis>
+  <sequence>1</sequence>
+  <logger>examenResuelto.ord201701.Main</logger>
+  <level>INFO</level>
+  <class>examenResuelto.ord201701.MapaFarmacias</class>
+  <method>saveToFile</method>
+  <thread>1</thread>
+  <message>Guardado fichero de farmacias de 10/1</message>
+</record>
+<record>
+  <date>2019-01-10T19:38:41</date>
+  <millis>1547145521607</millis>
+  <sequence>2</sequence>
+  <logger>examenResuelto.ord201701.Main</logger>
+  <level>INFO</level>
+  <class>examenResuelto.ord201701.MapaFarmacias</class>
+  <method>saveToFile</method>
+  <thread>17</thread>
+  <message>Guardado fichero de farmacias de 10/1</message>
+</record>
+<record>
+  <date>2019-01-10T19:38:54</date>
+  <millis>1547145534151</millis>
+  <sequence>3</sequence>
+  <logger>examenResuelto.ord201701.Main</logger>
+  <level>INFO</level>
+  <class>examenResuelto.ord201701.Main$HiloCambioPantalla</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>Hilo de cambio de pantalla interrumpido</message>
+</record>
+<record>
+  <date>2019-01-10T19:38:54</date>
+  <millis>1547145534152</millis>
+  <sequence>4</sequence>
+  <logger>examenResuelto.ord201701.Main</logger>
+  <level>INFO</level>
+  <class>examenResuelto.ord201701.Main$HiloCambioPantalla</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>Final de hilo de actualización de pantalla</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-01-10T19:40:13</date>
+  <millis>1547145613293</millis>
+  <sequence>0</sequence>
+  <logger>examenResuelto.ord201701.Main</logger>
+  <level>INFO</level>
+  <class>examenResuelto.ord201701.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Inicio de ejecuciÃ³n de Main</message>
+</record>
+<record>
+  <date>2019-01-10T19:40:14</date>
+  <millis>1547145614039</millis>
+  <sequence>1</sequence>
+  <logger>examenResuelto.ord201701.Main</logger>
+  <level>INFO</level>
+  <class>examenResuelto.ord201701.MapaFarmacias</class>
+  <method>saveToFile</method>
+  <thread>1</thread>
+  <message>Guardado fichero de farmacias de 10/1</message>
+</record>
+<record>
+  <date>2019-01-10T19:40:27</date>
+  <millis>1547145627008</millis>
+  <sequence>2</sequence>
+  <logger>examenResuelto.ord201701.Main</logger>
+  <level>INFO</level>
+  <class>examenResuelto.ord201701.Main$HiloCambioPantalla</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>Hilo de cambio de pantalla interrumpido</message>
+</record>
+<record>
+  <date>2019-01-10T19:40:27</date>
+  <millis>1547145627011</millis>
+  <sequence>3</sequence>
+  <logger>examenResuelto.ord201701.Main</logger>
+  <level>INFO</level>
+  <class>examenResuelto.ord201701.Main$HiloCambioPantalla</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>Final de hilo de actualización de pantalla</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-01-10T22:09:52</date>
+  <millis>1547154592005</millis>
+  <sequence>0</sequence>
+  <logger>examenResuelto.ord201701.Main</logger>
+  <level>INFO</level>
+  <class>examenResuelto.ord201701.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Inicio de ejecuciÃ³n de Main</message>
+</record>
+<record>
+  <date>2019-01-10T22:09:52</date>
+  <millis>1547154592938</millis>
+  <sequence>1</sequence>
+  <logger>examenResuelto.ord201701.Main</logger>
+  <level>INFO</level>
+  <class>examenResuelto.ord201701.MapaFarmacias</class>
+  <method>saveToFile</method>
+  <thread>1</thread>
+  <message>Guardado fichero de farmacias de 10/1</message>
+</record>
+<record>
+  <date>2019-01-10T22:10:44</date>
+  <millis>1547154644877</millis>
+  <sequence>2</sequence>
+  <logger>examenResuelto.ord201701.Main</logger>
+  <level>INFO</level>
+  <class>examenResuelto.ord201701.Main$HiloCambioPantalla</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>Hilo de cambio de pantalla interrumpido</message>
+</record>
+<record>
+  <date>2019-01-10T22:10:44</date>
+  <millis>1547154644877</millis>
+  <sequence>3</sequence>
+  <logger>examenResuelto.ord201701.Main</logger>
+  <level>INFO</level>
+  <class>examenResuelto.ord201701.Main$HiloCambioPantalla</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>Final de hilo de actualización de pantalla</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-01-10T22:17:14</date>
+  <millis>1547155034280</millis>
+  <sequence>0</sequence>
+  <logger>examenResuelto.ord201701.Main</logger>
+  <level>INFO</level>
+  <class>examenResuelto.ord201701.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Inicio de ejecuciÃ³n de Main</message>
+</record>
+<record>
+  <date>2019-01-10T22:17:15</date>
+  <millis>1547155035051</millis>
+  <sequence>1</sequence>
+  <logger>examenResuelto.ord201701.Main</logger>
+  <level>INFO</level>
+  <class>examenResuelto.ord201701.MapaFarmacias</class>
+  <method>saveToFile</method>
+  <thread>1</thread>
+  <message>Guardado fichero de farmacias de 10/1</message>
+</record>
+<record>
+  <date>2019-01-10T22:17:18</date>
+  <millis>1547155038318</millis>
+  <sequence>2</sequence>
+  <logger>examenResuelto.ord201701.Main</logger>
+  <level>INFO</level>
+  <class>examenResuelto.ord201701.Main$HiloCambioPantalla</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>Hilo de cambio de pantalla interrumpido</message>
+</record>
+<record>
+  <date>2019-01-10T22:17:18</date>
+  <millis>1547155038318</millis>
+  <sequence>3</sequence>
+  <logger>examenResuelto.ord201701.Main</logger>
+  <level>INFO</level>
+  <class>examenResuelto.ord201701.Main$HiloCambioPantalla</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>Final de hilo de actualización de pantalla</message>
+</record>
+</log>

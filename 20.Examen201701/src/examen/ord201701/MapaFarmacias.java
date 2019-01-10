@@ -1,6 +1,8 @@
 package examen.ord201701;
 
 import java.io.*;
+import java.sql.Connection;
+import java.sql.Statement;
 import java.util.*;
 
 
@@ -13,12 +15,14 @@ public class MapaFarmacias {
 	private HashMap<String,ArrayList<FarmaciaGuardia>> mapaFarmacias = new HashMap<>();
 	private int dia;
 	private int mes;
+	private Statement st;
 	
 	// Crea un mapa vacío
 	private MapaFarmacias() {
 		dia = 0;
 		mes = 0;
 		mapaFarmacias = null;
+
 	}
 	
 	/** Intenta cargar el mapa de farmacias del último fichero y lo devuelve
@@ -27,8 +31,17 @@ public class MapaFarmacias {
 	 */
 	public MapaFarmacias( String ficheroFarmacias ) throws NullPointerException {
 		// TAREA 2
-		// TODO
-		throw new NullPointerException();  // TODO Actualmente no carga el mapa
+		Connection con = BD.initBD("BDFarmacias.db");
+		st = BD.usarCrearTablasBD(con);
+		ArrayList<FarmaciaGuardia> farmacias = BD.farmaciaSelect(st); 
+		for(FarmaciaGuardia f : farmacias) {
+			if(mapaFarmacias.get(f.getZona()) == null){
+				mapaFarmacias.put(f.getZona(), new ArrayList<>());
+				mapaFarmacias.get(f.getZona()).add(f);
+			} else
+				mapaFarmacias.get(f.getZona()).add(f);
+		}
+//		throw new NullPointerException();  // TODO Actualmente no carga el mapa
 	}
 
 	/** Simula la carga del mapa de farmacias desde internet (en realidad, crea el mapa en local)
@@ -356,7 +369,14 @@ public class MapaFarmacias {
 	 */
 	public void saveToFile( String ficheroFarmacias ) throws IOException {
 		// TAREA 2
-		// TODO
+	Iterator i = mapaFarmacias.values().iterator();
+	while (i.hasNext()) {
+		ArrayList<FarmaciaGuardia> a = (ArrayList<FarmaciaGuardia>) i.next();
+		for (FarmaciaGuardia f : a) {
+			BD.farmaciaInsert(st, dia, mes, f);
+		}
+	}
+//			BD.farmaciaInsert(st, dia, mes, farmacia);
 	}
 	
 	/** Consultor del mapa de las farmacias de guardia

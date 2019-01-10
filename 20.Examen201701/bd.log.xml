@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-01-10T17:29:08</date>
+  <millis>1547137748616</millis>
+  <sequence>1</sequence>
+  <logger>examen.ord201701.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201701.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos BDFarmacias.db</message>
+</record>
+<record>
+  <date>2019-01-10T17:29:08</date>
+  <millis>1547137748720</millis>
+  <sequence>2</sequence>
+  <logger>examen.ord201701.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201701.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2019-01-10T17:29:08</date>
+  <millis>1547137748733</millis>
+  <sequence>3</sequence>
+  <logger>examen.ord201701.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201701.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from farmacia</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-01-10T17:29:26</date>
+  <millis>1547137766815</millis>
+  <sequence>1</sequence>
+  <logger>examen.ord201701.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201701.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos BDFarmacias.db</message>
+</record>
+<record>
+  <date>2019-01-10T17:29:26</date>
+  <millis>1547137766819</millis>
+  <sequence>2</sequence>
+  <logger>examen.ord201701.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201701.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2019-01-10T17:29:26</date>
+  <millis>1547137766820</millis>
+  <sequence>3</sequence>
+  <logger>examen.ord201701.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201701.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from farmacia</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-01-10T19:08:27</date>
+  <millis>1547143707002</millis>
+  <sequence>1</sequence>
+  <logger>examen.ord201701.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201701.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos BDFarmacias.db</message>
+</record>
+<record>
+  <date>2019-01-10T19:08:27</date>
+  <millis>1547143707012</millis>
+  <sequence>2</sequence>
+  <logger>examen.ord201701.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201701.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2019-01-10T19:08:27</date>
+  <millis>1547143707014</millis>
+  <sequence>3</sequence>
+  <logger>examen.ord201701.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201701.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from farmacia</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-01-10T19:10:50</date>
+  <millis>1547143850560</millis>
+  <sequence>1</sequence>
+  <logger>examen.ord201701.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201701.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos BDFarmacias.db</message>
+</record>
+<record>
+  <date>2019-01-10T19:10:50</date>
+  <millis>1547143850568</millis>
+  <sequence>2</sequence>
+  <logger>examen.ord201701.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201701.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2019-01-10T19:10:50</date>
+  <millis>1547143850569</millis>
+  <sequence>3</sequence>
+  <logger>examen.ord201701.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201701.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from farmacia</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-01-10T19:16:33</date>
+  <millis>1547144193361</millis>
+  <sequence>1</sequence>
+  <logger>examen.ord201701.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201701.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos BDFarmacias.db</message>
+</record>
+<record>
+  <date>2019-01-10T19:16:33</date>
+  <millis>1547144193367</millis>
+  <sequence>2</sequence>
+  <logger>examen.ord201701.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201701.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2019-01-10T19:16:33</date>
+  <millis>1547144193367</millis>
+  <sequence>3</sequence>
+  <logger>examen.ord201701.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201701.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from farmacia</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-01-10T20:05:37</date>
+  <millis>1547147137557</millis>
+  <sequence>1</sequence>
+  <logger>examen.ord201701.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201701.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos BDFarmacias.db</message>
+</record>
+<record>
+  <date>2019-01-10T20:05:37</date>
+  <millis>1547147137561</millis>
+  <sequence>2</sequence>
+  <logger>examen.ord201701.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201701.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2019-01-10T20:05:37</date>
+  <millis>1547147137562</millis>
+  <sequence>3</sequence>
+  <logger>examen.ord201701.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201701.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from farmacia</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-01-10T20:08:30</date>
+  <millis>1547147310904</millis>
+  <sequence>1</sequence>
+  <logger>examen.ord201701.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201701.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos BDFarmacias.db</message>
+</record>
+<record>
+  <date>2019-01-10T20:08:30</date>
+  <millis>1547147310908</millis>
+  <sequence>2</sequence>
+  <logger>examen.ord201701.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201701.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2019-01-10T20:08:30</date>
+  <millis>1547147310909</millis>
+  <sequence>3</sequence>
+  <logger>examen.ord201701.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201701.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from farmacia</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-01-10T20:21:54</date>
+  <millis>1547148114017</millis>
+  <sequence>1</sequence>
+  <logger>examen.ord201701.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201701.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos BDFarmacias.db</message>
+</record>
+<record>
+  <date>2019-01-10T20:21:54</date>
+  <millis>1547148114021</millis>
+  <sequence>2</sequence>
+  <logger>examen.ord201701.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201701.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2019-01-10T20:21:54</date>
+  <millis>1547148114022</millis>
+  <sequence>3</sequence>
+  <logger>examen.ord201701.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201701.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from farmacia</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-01-10T20:31:58</date>
+  <millis>1547148718650</millis>
+  <sequence>1</sequence>
+  <logger>examen.ord201701.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201701.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos BDFarmacias.db</message>
+</record>
+<record>
+  <date>2019-01-10T20:31:58</date>
+  <millis>1547148718654</millis>
+  <sequence>2</sequence>
+  <logger>examen.ord201701.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201701.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2019-01-10T20:31:58</date>
+  <millis>1547148718655</millis>
+  <sequence>3</sequence>
+  <logger>examen.ord201701.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201701.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from farmacia</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-01-10T22:08:12</date>
+  <millis>1547154492133</millis>
+  <sequence>1</sequence>
+  <logger>examen.ord201701.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201701.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos BDFarmacias.db</message>
+</record>
+<record>
+  <date>2019-01-10T22:08:12</date>
+  <millis>1547154492181</millis>
+  <sequence>2</sequence>
+  <logger>examen.ord201701.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201701.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2019-01-10T22:08:12</date>
+  <millis>1547154492181</millis>
+  <sequence>3</sequence>
+  <logger>examen.ord201701.BD</logger>
+  <level>INFO</level>
+  <class>examen.ord201701.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from farmacia</message>
+</record>
+</log>

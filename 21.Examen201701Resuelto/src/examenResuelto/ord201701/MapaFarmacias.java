@@ -15,7 +15,7 @@ public class MapaFarmacias implements Serializable {
 	private HashMap<String,ArrayList<FarmaciaGuardia>> mapaFarmacias = new HashMap<>();
 	private int dia;
 	private int mes;
-	
+
 	// Crea un mapa vacío
 	private MapaFarmacias() {
 		dia = 0;

@@ -131,7 +131,7 @@ public class VentanaFarmacias extends JFrame {
 	 */
 	public void clickListado() {
 		// TAREA 6
-		// TODO
+		taMensajes.setText(new MapaFarmaciasOrdenadas(mapaTodasFarmacias).toString());
 	}
 	
 	/** Click en el botón de "Capicúas"
@@ -188,11 +188,24 @@ public class VentanaFarmacias extends JFrame {
 		
 	/** Inicializa el formato de la jtable para que las filas de población / horario se vean en color cyan y negrita
 	 */
+		private Font tipoTitulo = new Font( "Arial", Font.BOLD, 18 );
 	public void initFormatoTabla() {
 		// A este método ya se le llama, una sola vez, en el constructor de la ventana
 		// TAREA 4 - Inicializa el formato de jtableFarmacias para el color de las filas de cabecera
-		// TODO
-	}
+		jtableFarmacias.setDefaultRenderer( Object.class, new DefaultTableCellRenderer() {
+			@Override
+			public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
+				Component c = super.getTableCellRendererComponent( table, value, isSelected, hasFocus, row, column );
+				if ("".equals(modeloDatosFarmacias.getValueAt( row, 2 ))) {  // Si la columna 2 está vacía poner formato cyan - negrita
+					c.setFont( tipoTitulo );
+					c.setBackground( Color.cyan );
+				} else {
+					c.setBackground( Color.white );
+				}
+				return c;
+			}
+		});
+	}//render cambiado, ahora falta meter datos
 		
 	/** Carga las farmacias del mapa en la JTable de la ventana
 	 * y hace que solo se puedan editar las celdas de dirección, y sus modificaciones se reflejen en el mapa
