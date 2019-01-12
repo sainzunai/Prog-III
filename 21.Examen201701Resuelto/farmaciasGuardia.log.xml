@@ -323,3 +323,99 @@
   <message>Final de hilo de actualización de pantalla</message>
 </record>
 </log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-01-11T12:48:05</date>
+  <millis>1547207285960</millis>
+  <sequence>0</sequence>
+  <logger>examenResuelto.ord201701.Main</logger>
+  <level>INFO</level>
+  <class>examenResuelto.ord201701.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Inicio de ejecuciÃ³n de Main</message>
+</record>
+<record>
+  <date>2019-01-11T12:48:08</date>
+  <millis>1547207288939</millis>
+  <sequence>1</sequence>
+  <logger>examenResuelto.ord201701.Main</logger>
+  <level>INFO</level>
+  <class>examenResuelto.ord201701.MapaFarmacias</class>
+  <method>saveToFile</method>
+  <thread>1</thread>
+  <message>Guardado fichero de farmacias de 11/1</message>
+</record>
+<record>
+  <date>2019-01-11T12:48:15</date>
+  <millis>1547207295105</millis>
+  <sequence>2</sequence>
+  <logger>examenResuelto.ord201701.Main</logger>
+  <level>INFO</level>
+  <class>examenResuelto.ord201701.Main$HiloCambioPantalla</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>Hilo de cambio de pantalla interrumpido</message>
+</record>
+<record>
+  <date>2019-01-11T12:48:15</date>
+  <millis>1547207295109</millis>
+  <sequence>3</sequence>
+  <logger>examenResuelto.ord201701.Main</logger>
+  <level>INFO</level>
+  <class>examenResuelto.ord201701.Main$HiloCambioPantalla</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>Final de hilo de actualización de pantalla</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-01-11T12:56:55</date>
+  <millis>1547207815055</millis>
+  <sequence>0</sequence>
+  <logger>examenResuelto.ord201701.Main</logger>
+  <level>INFO</level>
+  <class>examenResuelto.ord201701.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Inicio de ejecuciÃ³n de Main</message>
+</record>
+<record>
+  <date>2019-01-11T12:56:55</date>
+  <millis>1547207815838</millis>
+  <sequence>1</sequence>
+  <logger>examenResuelto.ord201701.Main</logger>
+  <level>INFO</level>
+  <class>examenResuelto.ord201701.MapaFarmacias</class>
+  <method>saveToFile</method>
+  <thread>1</thread>
+  <message>Guardado fichero de farmacias de 11/1</message>
+</record>
+<record>
+  <date>2019-01-11T12:56:57</date>
+  <millis>1547207817222</millis>
+  <sequence>2</sequence>
+  <logger>examenResuelto.ord201701.Main</logger>
+  <level>INFO</level>
+  <class>examenResuelto.ord201701.Main$HiloCambioPantalla</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>Hilo de cambio de pantalla interrumpido</message>
+</record>
+<record>
+  <date>2019-01-11T12:56:57</date>
+  <millis>1547207817225</millis>
+  <sequence>3</sequence>
+  <logger>examenResuelto.ord201701.Main</logger>
+  <level>INFO</level>
+  <class>examenResuelto.ord201701.Main$HiloCambioPantalla</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>Final de hilo de actualización de pantalla</message>
+</record>
+</log>
