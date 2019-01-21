@@ -1,0 +1,74 @@
+Tree - conserva orden. Mas lento que hash. Tiempo logaritmico. Compare to.
+Map - guarda key unica y value.
+Set - guarda objeto no mas. normalmente solo se usa para saber si lo teinees o no (cosas muy basicas).
+
+
+TreeSet
+	tendrias que programar el metodo compareTo. - menos, + mayor, 
+	tiene orden pero no posicion
+	rapido para muchos objetos
+	tendriamos que hacer implements en el objeto que queremos meter en el mapa tal que:
+			public Usuario implements Comparable<Usuario>(){
+				[CODIGO]
+			}
+			@Override
+			public int compareTo(Usuario u){
+				return nombre.compareTo(u.nombre); ó if(hora<u.hora) return -1... si el criterio principal es 0, hacemos el segundo criterio.
+			}  										//tiene que devolver numero negativo, 0 o positivo.
+			
+	Para iterar:
+	Iterator<UsuarioTwitter> itr = usuariosConAmigos.iterator();
+		while(itr.hasNext()){
+		    UsuarioTwitter u = itr.next();
+		}
+		
+	accedemos a un treeset iterando o solo pidiendo el MAYOR o el MENOR.
+
+TreeMap
+	lo mismo que treeset pero esta vez las operaciones se obtienen en tiempo cte. Ordenado (orden en el que lo metes) y eficiente.
+	tambien hay que implementar el comparable si no utilizamos como key un int o string
+				
+HashMap
+	Se comporta en tiempoo cte en vez de logaritmico. -- es rapido
+	Se utiliza cuando no necesitas la posicion -- no tiene orden.
+	No hay que implementar ninguna interfaz porque TODO objeto es hasheable
+	implements hasheable override hashcode - SOLO si nos pide que el codigo sea un objeto
+	
+(Instanceof)
+
+HashSet
+	no esta ordenado. Solo sirve como arraylist pero NO se repiten. Es algo mas rapido.
+
+-----------------------------------------------------------
+--------------------------- METODOS -----------------------
+-----------------------------------------------------------
+
+ITERAR EN GENERAL
+
+	while (iterador.hasNext()){
+	 ... = iterador.next(); 
+	}
+
+OBTENER ITERADOR MAPA
+
+	Sabiendo el valor key obtenemos el objeto con mapa.get(key);
+	
+	Iterator<objetoAlmacenado> iterador = mapa.values().iterator();
+	
+	while (iterador.hasNext()){
+	 ... = iterador.next(); 
+	}
+
+	-a lo de abajo no hacer mucho caso:
+	for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+	    System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());
+	}
+	
+OBTENER KEYS DE UN MAPA
+	for (String s : mapa.keySet()) {
+    		ret.add( s );
+    	}
+    	
+OBTENER ITERADOR DE UN SET
+	miSet.iterator();
+	
