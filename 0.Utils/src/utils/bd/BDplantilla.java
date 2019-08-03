@@ -126,19 +126,27 @@ public class BDplantilla {
 	
 	/** Anyade una analitica a la tabla abierta de BD, usando la sentencia INSERT de SQL
 	 * @param st	Sentencia ya abierta de Base de Datos (con la estructura de tabla correspondiente a la analitica)
-	 * @param codigo	Codigo a anyadir a la BD (en nueva fila)
-	 * @param contador	contador a anyadir a esa nueva fila de la BD
+	 * @param nomtabla	nombre de la tabla a la que qeuremos acceder
+	 * @param Nombre/contraseña	campos a introducir
 	 * @return	true si la insercion es correcta, false en caso contrario
 	 */
-	public static boolean eleccionesInsert( Statement st, String nombre, String  contraseña ) {
+	public static boolean insert( Statement st, String nomTabla, String nombre, String  contraseña ) {
 		String sentSQL = "";
 		try {
-			sentSQL = "insert into elecciones values('" + secu(nombre) + "', " + contraseña + ")";
-			int val = st.executeUpdate( sentSQL );
-			log( Level.INFO, "BD fila añadida " + val + " fila\t" + sentSQL, null );
-			if (val!=1) {  // Se tiene que añadir 1 - error si no
-				log( Level.SEVERE, "Error en insert de BD\t" + sentSQL, null );
-				return false;  
+			sentSQL = "select * from " + nomTabla + " where nombre = '" + nombre + "'";
+			ResultSet rs = st.executeQuery( sentSQL );
+			
+			if (!rs.next()) {	//si no existe, inserta
+				sentSQL = "insert into " + nomTabla + " values('" + secu(nombre) + "', '" + contraseña + "')";
+				int val = st.executeUpdate( sentSQL );
+				log( Level.INFO, "BD fila añadida " + val + " fila\t" + sentSQL, null );
+				if (val!=1) {  // Se tiene que añadir 1 - error si no
+					log( Level.SEVERE, "Error en insert de BD\t" + sentSQL, null );
+					return false;  
+			}else {//esta parte de logs esta mal. funciona bien per indica mal
+				System.out.println("El elemento EXISTE, NO se insertara en la tabla");
+			}
+			
 			}
 			return true;
 		} catch (SQLException e) {
@@ -151,14 +159,15 @@ public class BDplantilla {
 
 	/** Realiza una consulta a la tabla abierta de la BD, usando la sentencia SELECT de SQL
 	 * @param st	Sentencia ya abierta de Base de Datos (con la estructura de tabla correspondiente a la analitica)
-	 * @param codigo	Codigo a buscar en la tabla
+	 * @param nomTabla nombre de la tabla
+	 * @param nombreUsu	Codigo a buscar en la tabla
 	 * @return	contador cargado desde la base de datos para ese cï¿½digo, Integer.MAX_VALUE si hay cualquier error
 	 */
-	public static int analiticaSelect( Statement st, String codigo ) {
+	public static int select( Statement st, String nomTabla, String nombreUsu ) {
 		String sentSQL = "";
 		try {
 			int ret = Integer.MAX_VALUE;
-			sentSQL = "select * from analitica where codigo='" + codigo + "'";
+			sentSQL = "select * from " + nomTabla +" where nombre='" + nombreUsu + "'";
 			ResultSet rs = st.executeQuery( sentSQL );
 			if (rs.next()) {
 				ret = rs.getInt( "contador" );
